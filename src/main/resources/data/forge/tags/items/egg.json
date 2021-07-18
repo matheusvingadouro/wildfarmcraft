@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "wildfarmcraft:duckegg",
+    "wildfarmcraft:chicken_egg",
+    "wildfarmcraft:egg_in_a_bowl",
+    "wildfarmcraft:turkey_egg"
+  ]
+}

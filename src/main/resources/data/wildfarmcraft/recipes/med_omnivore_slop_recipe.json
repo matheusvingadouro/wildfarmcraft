@@ -1,0 +1,34 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "omnivore_foods"
+    },
+    {
+      "tag": "omnivore_foods"
+    },
+    {
+      "tag": "omnivore_foods"
+    },
+    {
+      "tag": "omnivore_foods"
+    },
+    {
+      "tag": "omnivore_foods"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "wildfarmcraft:medium_omnivore_slop",
+    "count": 2
+  }
+}

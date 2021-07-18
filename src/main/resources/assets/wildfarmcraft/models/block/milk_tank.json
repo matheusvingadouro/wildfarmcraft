@@ -1,0 +1,9 @@
+{
+  "parent": "wildfarmcraft:custom/milktank",
+  "textures": {
+    "all": "wildfarmcraft:blocks/milktank",
+    "particle": "wildfarmcraft:blocks/milktank",
+    "1": "wildfarmcraft:blocks/milktank2",
+    "2": "wildfarmcraft:blocks/milktank"
+  }
+}

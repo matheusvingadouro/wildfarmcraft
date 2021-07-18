@@ -1,0 +1,10 @@
+{
+  "_fv": 18,
+  "_type": "loottable",
+  "definition": {
+    "type": "Block",
+    "pools": [],
+    "name": "blocks/strawberry_bush_2",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:PastureSeed"
+      },
+      {
+        "value": "CUSTOM:AppleSeeds"
+      },
+      {
+        "value": "CUSTOM:AppleLeaves"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "autumn_crops",
+    "namespace": "sereneseasons"
+  }
+}

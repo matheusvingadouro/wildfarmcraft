@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "TAG:omnivore_foods"
+      },
+      {
+        "value": "TAG:omnivore_foods"
+      },
+      {
+        "value": "TAG:omnivore_foods"
+      },
+      {
+        "value": "TAG:omnivore_foods"
+      },
+      {
+        "value": "TAG:omnivore_foods"
+      },
+      {
+        "value": "Items.BOWL"
+      },
+      {
+        "value": "Items.WATER_BUCKET"
+      },
+      {
+        "value": "Items.BOWL"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:MediumOmnivoreSlop"
+    },
+    "name": "med_omnivore_slop_recipe",
+    "namespace": "mod"
+  }
+}

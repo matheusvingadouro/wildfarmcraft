@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "milktank2",
+        "2": "milktank"
+      },
+      "name": "default"
+    }
+  }
+}

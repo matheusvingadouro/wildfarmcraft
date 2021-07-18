@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:sunflower",
+    "minecraft:apple",
+    "minecraft:wheat_seeds",
+    "minecraft:wheat",
+    "minecraft:carrot",
+    "minecraft:potato",
+    "minecraft:pumpkin_seeds",
+    "minecraft:sugar_cane",
+    "minecraft:melon_seeds",
+    "minecraft:sweet_berries",
+    "minecraft:melon_slice",
+    "minecraft:beetroot",
+    "minecraft:beetroot_seeds",
+    "wildfarmcraft:apple_seeds",
+    "wildfarmcraft:strawberry_item"
+  ]
+}

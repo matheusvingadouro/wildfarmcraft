@@ -1,0 +1,13 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "minecraft:wfc_milk"
+    }
+  ],
+  "result": {
+    "item": "minecraft:milk_bucket",
+    "count": 1
+  }
+}

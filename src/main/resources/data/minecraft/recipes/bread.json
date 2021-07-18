@@ -1,0 +1,42 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "wildfarmcraft:flour"
+    },
+    "1": {
+      "item": "wildfarmcraft:flour"
+    },
+    "2": {
+      "item": "wildfarmcraft:flour"
+    },
+    "3": {
+      "item": "wildfarmcraft:flour"
+    },
+    "4": {
+      "item": "minecraft:water_bucket"
+    },
+    "5": {
+      "item": "wildfarmcraft:flour"
+    },
+    "6": {
+      "item": "wildfarmcraft:flour"
+    },
+    "7": {
+      "item": "wildfarmcraft:flour"
+    },
+    "8": {
+      "item": "wildfarmcraft:flour"
+    }
+  },
+  "result": {
+    "item": "wildfarmcraft:dough",
+    "count": 8
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "wildfarmcraft:blocks/strawhay",
+    "top": "wildfarmcraft:blocks/strawhay",
+    "side": "wildfarmcraft:blocks/strawhay"
+  }
+}

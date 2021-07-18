@@ -1,0 +1,26 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "wildfarmcraft:wool_tuft_white"
+    },
+    "1": {
+      "item": "wildfarmcraft:wool_tuft_white"
+    },
+    "2": {
+      "item": "wildfarmcraft:wool_tuft_white"
+    },
+    "3": {
+      "item": "wildfarmcraft:wool_tuft_white"
+    }
+  },
+  "result": {
+    "item": "minecraft:white_wool",
+    "count": 1
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Pasture"
+      },
+      {
+        "value": "CUSTOM:PastureGrown"
+      },
+      {
+        "value": "CUSTOM:AppleLeaves"
+      },
+      {
+        "value": "CUSTOM:AppleBlossom"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "unbreakable_infertile_crops",
+    "namespace": "sereneseasons"
+  }
+}

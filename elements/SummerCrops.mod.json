@@ -1,0 +1,23 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:PastureGrown"
+      },
+      {
+        "value": "CUSTOM:Pasture"
+      },
+      {
+        "value": "CUSTOM:AppleSapling"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "summer_crops",
+    "namespace": "sereneseasons"
+  }
+}

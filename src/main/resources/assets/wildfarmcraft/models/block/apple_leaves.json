@@ -1,0 +1,7 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "wildfarmcraft:blocks/appleleaves1",
+    "particle": "wildfarmcraft:blocks/appleleaves1"
+  }
+}

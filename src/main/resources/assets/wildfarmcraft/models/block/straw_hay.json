@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wildfarmcraft:blocks/strawhay",
+    "up": "wildfarmcraft:blocks/strawhay",
+    "north": "wildfarmcraft:blocks/strawhay",
+    "east": "wildfarmcraft:blocks/strawhay",
+    "south": "wildfarmcraft:blocks/strawhay",
+    "west": "wildfarmcraft:blocks/strawhay",
+    "particle": "wildfarmcraft:blocks/strawhay"
+  }
+}

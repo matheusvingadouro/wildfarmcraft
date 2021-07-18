@@ -1,0 +1,12 @@
+{
+  "_fv": 18,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Wildfarmcraft Animal Growing Time",
+    "description": "The time the animal takes for growing into adults",
+    "category": "MOBS",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 48000
+  }
+}

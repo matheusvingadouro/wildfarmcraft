@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "TAG:herbivore_foods"
+      },
+      {
+        "value": "TAG:herbivore_foods"
+      },
+      {
+        "value": "TAG:herbivore_foods"
+      },
+      {
+        "value": "TAG:herbivore_foods"
+      },
+      {
+        "value": "TAG:herbivore_foods"
+      },
+      {
+        "value": "CUSTOM:EmptyBag"
+      },
+      {
+        "value": "CUSTOM:EmptyBag"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BagMedHerbivoreFood"
+    },
+    "name": "med_herbivore_food_recipe",
+    "namespace": "mod"
+  }
+}

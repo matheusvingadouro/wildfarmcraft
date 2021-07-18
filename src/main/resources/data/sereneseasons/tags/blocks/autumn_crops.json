@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "wildfarmcraft:pasture_grown",
+    "wildfarmcraft:pasture",
+    "wildfarmcraft:apple_leaves",
+    "wildfarmcraft:apple_stage_1",
+    "wildfarmcraft:apple_stage_2",
+    "wildfarmcraft:apple_stage_3",
+    "wildfarmcraft:apple_sapling",
+    "wildfarmcraft:apple_blossom"
+  ]
+}

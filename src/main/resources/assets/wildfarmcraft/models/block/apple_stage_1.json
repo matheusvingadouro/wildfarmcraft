@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "wildfarmcraft:blocks/applestage1",
+    "particle": "wildfarmcraft:blocks/applestage1"
+  }
+}

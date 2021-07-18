@@ -1,0 +1,26 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:StrawberryBush1"
+      },
+      {
+        "value": "CUSTOM:StrawberryBush2"
+      },
+      {
+        "value": "CUSTOM:StrawberryBush3"
+      },
+      {
+        "value": "CUSTOM:StrawberryBushGrown"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "crops",
+    "namespace": "minecraft"
+  }
+}

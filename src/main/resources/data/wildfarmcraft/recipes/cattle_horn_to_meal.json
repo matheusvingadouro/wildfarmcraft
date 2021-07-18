@@ -1,0 +1,9 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "wildfarmcraft:cattle_horn"
+  },
+  "result": "minecraft:bone_meal"
+}

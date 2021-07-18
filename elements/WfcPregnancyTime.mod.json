@@ -1,0 +1,12 @@
+{
+  "_fv": 18,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Wildfarmcraft Pregnancy Time",
+    "description": "The time the animal takes for pregnancy",
+    "category": "MOBS",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 24000
+  }
+}

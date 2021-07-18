@@ -1,0 +1,257 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:HolsteinCalf"
+      },
+      {
+        "value": "CUSTOM:HolsteinCow"
+      },
+      {
+        "value": "CUSTOM:HolsteinBull"
+      },
+      {
+        "value": "CUSTOM:HampshireLamb"
+      },
+      {
+        "value": "CUSTOM:HampshireEwe"
+      },
+      {
+        "value": "CUSTOM:HampshireRam"
+      },
+      {
+        "value": "CUSTOM:PinkPiglet"
+      },
+      {
+        "value": "CUSTOM:PinkSow"
+      },
+      {
+        "value": "CUSTOM:PinkPigMale"
+      },
+      {
+        "value": "CUSTOM:PekinDuckling"
+      },
+      {
+        "value": "CUSTOM:PekinDuckFemale"
+      },
+      {
+        "value": "CUSTOM:PekinDuckMale"
+      },
+      {
+        "value": "CUSTOM:DuckNest"
+      },
+      {
+        "value": "CUSTOM:AurochsCalf"
+      },
+      {
+        "value": "CUSTOM:AurochsCow"
+      },
+      {
+        "value": "CUSTOM:AurochsBull"
+      },
+      {
+        "value": "CUSTOM:WildDuckling"
+      },
+      {
+        "value": "CUSTOM:WildDuckFemale"
+      },
+      {
+        "value": "CUSTOM:WildDuckMale"
+      },
+      {
+        "value": "CUSTOM:IberianCalf"
+      },
+      {
+        "value": "CUSTOM:IberianCow"
+      },
+      {
+        "value": "CUSTOM:IberianBull"
+      },
+      {
+        "value": "CUSTOM:NeloreCalf"
+      },
+      {
+        "value": "CUSTOM:NeloreCow"
+      },
+      {
+        "value": "CUSTOM:NeloreBull"
+      },
+      {
+        "value": "CUSTOM:BoarPiglet"
+      },
+      {
+        "value": "CUSTOM:BoarSow"
+      },
+      {
+        "value": "CUSTOM:BoarMale"
+      },
+      {
+        "value": "CUSTOM:MouflonLamb"
+      },
+      {
+        "value": "CUSTOM:MouflonEwe"
+      },
+      {
+        "value": "CUSTOM:MouflonRam"
+      },
+      {
+        "value": "CUSTOM:BlackLamb"
+      },
+      {
+        "value": "CUSTOM:BlackEwe"
+      },
+      {
+        "value": "CUSTOM:BlackRam"
+      },
+      {
+        "value": "CUSTOM:MerinoLamb"
+      },
+      {
+        "value": "CUSTOM:MerinoEwe"
+      },
+      {
+        "value": "CUSTOM:MerinoRam"
+      },
+      {
+        "value": "CUSTOM:JunglefowlChick"
+      },
+      {
+        "value": "CUSTOM:JunglefowlFemale"
+      },
+      {
+        "value": "CUSTOM:JunglefowlMale"
+      },
+      {
+        "value": "CUSTOM:ChickenNest"
+      },
+      {
+        "value": "CUSTOM:LeghornChick"
+      },
+      {
+        "value": "CUSTOM:LeghornHen"
+      },
+      {
+        "value": "CUSTOM:LeghornRooster"
+      },
+      {
+        "value": "CUSTOM:WildTurkeyBaby"
+      },
+      {
+        "value": "CUSTOM:WildTurkeyFemale"
+      },
+      {
+        "value": "CUSTOM:WildTurkeyMale"
+      },
+      {
+        "value": "CUSTOM:TurkeyNest"
+      },
+      {
+        "value": "CUSTOM:DomesticTurkeyChick"
+      },
+      {
+        "value": "CUSTOM:DomesticTurkeyFemale"
+      },
+      {
+        "value": "CUSTOM:DomesticTurkeyMale"
+      },
+      {
+        "value": "CUSTOM:WildRabbitBaby"
+      },
+      {
+        "value": "CUSTOM:WildRabbitFemale"
+      },
+      {
+        "value": "CUSTOM:WildRabbitMale"
+      },
+      {
+        "value": "CUSTOM:DutchRabbitBaby"
+      },
+      {
+        "value": "CUSTOM:DutchRabbitFemale"
+      },
+      {
+        "value": "CUSTOM:DutchRabbitMale"
+      },
+      {
+        "value": "CUSTOM:SimmentalCalf"
+      },
+      {
+        "value": "CUSTOM:SimmentalCow"
+      },
+      {
+        "value": "CUSTOM:SimmentalBull"
+      },
+      {
+        "value": "CUSTOM:GirCalf"
+      },
+      {
+        "value": "CUSTOM:GirCow"
+      },
+      {
+        "value": "CUSTOM:GirBull"
+      },
+      {
+        "value": "CUSTOM:HighlandsCalf"
+      },
+      {
+        "value": "CUSTOM:HighlandsCow"
+      },
+      {
+        "value": "CUSTOM:HighlandsBull"
+      },
+      {
+        "value": "CUSTOM:BisonCalf"
+      },
+      {
+        "value": "CUSTOM:BisonCow"
+      },
+      {
+        "value": "CUSTOM:BisonBull"
+      },
+      {
+        "value": "CUSTOM:DeerBaby"
+      },
+      {
+        "value": "CUSTOM:DeerFemale"
+      },
+      {
+        "value": "CUSTOM:DeerMale"
+      },
+      {
+        "value": "CUSTOM:RedRhodeChick"
+      },
+      {
+        "value": "CUSTOM:RedRhodeHen"
+      },
+      {
+        "value": "CUSTOM:RedRhodeRooster"
+      },
+      {
+        "value": "CUSTOM:SpottedPiglet"
+      },
+      {
+        "value": "CUSTOM:SpottedSow"
+      },
+      {
+        "value": "CUSTOM:SpottedPigMale"
+      },
+      {
+        "value": "CUSTOM:BrownDuckling"
+      },
+      {
+        "value": "CUSTOM:BrownDuckFemale"
+      },
+      {
+        "value": "CUSTOM:BrownDuckMale"
+      }
+    ],
+    "name": "wfc_entities",
+    "namespace": "minecraft"
+  }
+}

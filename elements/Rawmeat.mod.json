@@ -1,0 +1,20 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:RawDuck"
+      },
+      {
+        "value": "CUSTOM:RawTurkey"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "rawmeat",
+    "namespace": "forge"
+  }
+}

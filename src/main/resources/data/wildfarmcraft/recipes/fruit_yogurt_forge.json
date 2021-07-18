@@ -1,0 +1,31 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:fruits"
+    },
+    {
+      "tag": "forge:fruits"
+    },
+    {
+      "tag": "forge:fruits"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "wildfarmcraft:bucketofcuddles"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "wildfarmcraft:fruit_yogurt",
+    "count": 3
+  }
+}

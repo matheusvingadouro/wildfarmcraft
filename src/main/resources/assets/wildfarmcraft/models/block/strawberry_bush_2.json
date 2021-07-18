@@ -1,0 +1,7 @@
+{
+  "parent": "block/tinted_cross",
+  "textures": {
+    "cross": "wildfarmcraft:blocks/strawberry_bush2",
+    "particle": "wildfarmcraft:blocks/strawberry_bush2"
+  }
+}

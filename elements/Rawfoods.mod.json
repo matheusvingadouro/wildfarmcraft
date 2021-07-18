@@ -1,0 +1,38 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.CHICKEN"
+      },
+      {
+        "value": "Items.PORKCHOP"
+      },
+      {
+        "value": "Items.BEEF"
+      },
+      {
+        "value": "Items.RABBIT"
+      },
+      {
+        "value": "Items.MUTTON"
+      },
+      {
+        "value": "CUSTOM:RawDuck"
+      },
+      {
+        "value": "CUSTOM:RawTurkey"
+      },
+      {
+        "value": "CUSTOM:RawVenison"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "raw_food",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "23"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "2": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "3": {
+      "item": "wildfarmcraft:bucketofcuddles"
+    }
+  },
+  "result": {
+    "item": "wildfarmcraft:cheese_slice",
+    "count": 3
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "wildfarmcraft:blocks/breaking",
+    "up": "wildfarmcraft:blocks/breaking",
+    "north": "wildfarmcraft:blocks/breaking",
+    "east": "wildfarmcraft:blocks/breaking",
+    "south": "wildfarmcraft:blocks/breaking",
+    "west": "wildfarmcraft:blocks/breaking",
+    "particle": "wildfarmcraft:blocks/breaking"
+  }
+}

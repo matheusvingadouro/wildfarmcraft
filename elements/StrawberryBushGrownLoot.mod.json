@@ -1,0 +1,10 @@
+{
+  "_fv": 18,
+  "_type": "loottable",
+  "definition": {
+    "type": "Generic",
+    "pools": [],
+    "name": "blocks/strawberry_bush_grown",
+    "namespace": "mod"
+  }
+}

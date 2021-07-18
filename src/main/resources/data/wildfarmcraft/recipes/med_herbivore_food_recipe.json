@@ -1,0 +1,31 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "herbivore_foods"
+    },
+    {
+      "tag": "herbivore_foods"
+    },
+    {
+      "tag": "herbivore_foods"
+    },
+    {
+      "tag": "herbivore_foods"
+    },
+    {
+      "tag": "herbivore_foods"
+    },
+    {
+      "item": "wildfarmcraft:empty_bag"
+    },
+    {
+      "item": "wildfarmcraft:empty_bag"
+    }
+  ],
+  "result": {
+    "item": "wildfarmcraft:bag_med_herbivore_food",
+    "count": 2
+  }
+}

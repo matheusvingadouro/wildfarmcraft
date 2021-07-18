@@ -1,0 +1,29 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:PastureGrown"
+      },
+      {
+        "value": "CUSTOM:AppleStage1"
+      },
+      {
+        "value": "CUSTOM:AppleStage2"
+      },
+      {
+        "value": "CUSTOM:AppleStage3"
+      },
+      {
+        "value": "CUSTOM:StrawberryBushGrown"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "grown_crops",
+    "namespace": "mod"
+  }
+}

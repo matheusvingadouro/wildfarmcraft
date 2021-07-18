@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:WoolTuftWhite"
+      },
+      {
+        "value": "CUSTOM:WoolTuftWhite"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:WoolTuftBlack"
+      },
+      {
+        "value": "CUSTOM:WoolTuftWhite"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Blocks.WOOL#8"
+    },
+    "name": "tuft_for_light_gray_wool",
+    "namespace": "mod"
+  }
+}

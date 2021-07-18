@@ -1,0 +1,113 @@
+{
+  "blowing_horn": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:blowinghorn",
+        "stream": true
+      }
+    ]
+  },
+  "duckamibent": {
+    "category": "master",
+    "subtitle": "subtitles.duckamibent",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:duck",
+        "stream": false
+      }
+    ]
+  },
+  "duckhurt": {
+    "category": "master",
+    "subtitle": "subtitles.duckhurt",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:duckhurt",
+        "stream": false
+      }
+    ]
+  },
+  "ducklingambient": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:duckling",
+        "stream": false
+      }
+    ]
+  },
+  "ducklinghurt": {
+    "category": "master",
+    "subtitle": "subtitles.ducklinghurt",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:ducklinghurt",
+        "stream": false
+      }
+    ]
+  },
+  "chick": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:chick",
+        "stream": false
+      }
+    ]
+  },
+  "chickhurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:chickhurt",
+        "stream": false
+      }
+    ]
+  },
+  "turkey": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:turkey",
+        "stream": false
+      }
+    ]
+  },
+  "turkeyhurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:turkeyhurt",
+        "stream": false
+      }
+    ]
+  },
+  "rooster": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:roostersounds",
+        "stream": false
+      }
+    ]
+  },
+  "bison": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:bison",
+        "stream": false
+      }
+    ]
+  },
+  "bisonhurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:bisonhurt",
+        "stream": false
+      }
+    ]
+  }
+}

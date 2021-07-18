@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "wildfarmcraft:pasture_grown",
+    "wildfarmcraft:pasture",
+    "wildfarmcraft:strawberry_bush_1",
+    "wildfarmcraft:strawberry_bush_2",
+    "wildfarmcraft:strawberry_bush_3",
+    "wildfarmcraft:strawberry_bush_grown"
+  ]
+}

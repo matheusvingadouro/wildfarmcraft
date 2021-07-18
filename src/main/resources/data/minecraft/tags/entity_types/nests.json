@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "wildfarmcraft:duck_nest",
+    "wildfarmcraft:turkey_nest",
+    "wildfarmcraft:chicken_nest"
+  ]
+}

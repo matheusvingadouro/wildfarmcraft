@@ -1,0 +1,50 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Pasture"
+      },
+      {
+        "value": "CUSTOM:AppleLeaves"
+      },
+      {
+        "value": "CUSTOM:PastureGrown"
+      },
+      {
+        "value": "CUSTOM:AppleSapling"
+      },
+      {
+        "value": "CUSTOM:AppleStage1"
+      },
+      {
+        "value": "CUSTOM:AppleStage2"
+      },
+      {
+        "value": "CUSTOM:AppleStage3"
+      },
+      {
+        "value": "CUSTOM:AppleBlossom"
+      },
+      {
+        "value": "CUSTOM:StrawberryBush1"
+      },
+      {
+        "value": "CUSTOM:StrawberryBush2"
+      },
+      {
+        "value": "CUSTOM:StrawberryBush3"
+      },
+      {
+        "value": "CUSTOM:StrawberryBushGrown"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "wfc_plants",
+    "namespace": "forge"
+  }
+}

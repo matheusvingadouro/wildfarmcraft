@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "wildfarmcraft:pasture",
+    "wildfarmcraft:pasture_grown",
+    "wildfarmcraft:apple_leaves",
+    "wildfarmcraft:apple_blossom"
+  ]
+}

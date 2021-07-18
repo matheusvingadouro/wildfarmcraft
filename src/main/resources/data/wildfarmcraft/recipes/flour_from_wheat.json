@@ -1,0 +1,16 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wildfarmcraft:mortar_and_pestle"
+    },
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "result": {
+    "item": "wildfarmcraft:flour",
+    "count": 1
+  }
+}

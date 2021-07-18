@@ -1,0 +1,11 @@
+{
+  "_fv": 18,
+  "_type": "tab",
+  "definition": {
+    "name": "Wild Farm Craft Spawn Eggs",
+    "icon": {
+      "value": "CUSTOM:BagBigHerbivoreFoods"
+    },
+    "showSearch": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "wildfarmcraft:pasture_seed"
+    },
+    "1": {
+      "item": "wildfarmcraft:pasture_seed"
+    }
+  },
+  "result": {
+    "item": "wildfarmcraft:straw_hay_slab",
+    "count": 1
+  }
+}

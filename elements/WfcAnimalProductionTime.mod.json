@@ -1,0 +1,12 @@
+{
+  "_fv": 18,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Number",
+    "displayName": "Wildfarmcraft Animal Production Time",
+    "description": "The time the animal takes for producing things, can be multiplied depending on specie",
+    "category": "MOBS",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 6000
+  }
+}

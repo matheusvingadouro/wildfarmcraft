@@ -1,0 +1,22 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "wildfarmcraft:flour"
+    },
+    "1": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "2": {
+      "item": "wildfarmcraft:flour"
+    }
+  },
+  "result": {
+    "item": "minecraft:cookie",
+    "count": 8
+  }
+}

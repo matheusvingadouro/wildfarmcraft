@@ -1,0 +1,10 @@
+{
+  "_fv": 18,
+  "_type": "loottable",
+  "definition": {
+    "type": "Block",
+    "pools": [],
+    "name": "blocks/apple_blossom",
+    "namespace": "mod"
+  }
+}

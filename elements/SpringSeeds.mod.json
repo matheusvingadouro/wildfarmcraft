@@ -1,0 +1,29 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:PastureSeed"
+      },
+      {
+        "value": "CUSTOM:StrawberryBush1"
+      },
+      {
+        "value": "CUSTOM:StrawberryBush2"
+      },
+      {
+        "value": "CUSTOM:StrawberryBush3"
+      },
+      {
+        "value": "CUSTOM:StrawberryBushGrown"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "spring_crops",
+    "namespace": "sereneseasons"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "wildfarmcraft:block/straw_hay_slab"
+    },
+    "type=top": {
+      "model": "wildfarmcraft:block/straw_hay_slab_top"
+    },
+    "type=double": {
+      "model": "wildfarmcraft:block/straw_hay_slab_full"
+    }
+  }
+}

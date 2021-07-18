@@ -1,0 +1,23 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:DuckNest"
+      },
+      {
+        "value": "CUSTOM:TurkeyNest"
+      },
+      {
+        "value": "CUSTOM:ChickenNest"
+      }
+    ],
+    "name": "nests",
+    "namespace": "minecraft"
+  }
+}

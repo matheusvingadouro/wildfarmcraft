@@ -1,0 +1,26 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Duckegg"
+      },
+      {
+        "value": "CUSTOM:ChickenEgg"
+      },
+      {
+        "value": "CUSTOM:EggInABowl"
+      },
+      {
+        "value": "CUSTOM:TurkeyEgg"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "egg",
+    "namespace": "forge"
+  }
+}

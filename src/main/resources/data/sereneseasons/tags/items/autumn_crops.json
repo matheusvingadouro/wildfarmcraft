@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "wildfarmcraft:pasture_seed",
+    "wildfarmcraft:apple_seeds",
+    "wildfarmcraft:apple_leaves"
+  ]
+}
