@@ -1,0 +1,29 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:StrawberryBushGrown"
+      },
+      {
+        "value": "CUSTOM:StrawberryBush1"
+      },
+      {
+        "value": "CUSTOM:StrawberryBush2"
+      },
+      {
+        "value": "CUSTOM:StrawberryBush3"
+      },
+      {
+        "value": "CUSTOM:StrawberryBushGrown"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "wfc_edible_ground_crops",
+    "namespace": "mod"
+  }
+}

@@ -7629,6 +7629,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "WfcEdibleGroundCrops",
+      "type": "tag",
+      "sortid": 438,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wfc_edible_ground_crops"
     }
   ],
   "variable_elements": [],

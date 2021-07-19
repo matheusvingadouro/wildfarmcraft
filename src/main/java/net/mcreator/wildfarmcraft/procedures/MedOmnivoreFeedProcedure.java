@@ -121,8 +121,13 @@ public class MedOmnivoreFeedProcedure extends WildfarmcraftModElements.ModElemen
 						entity.getPersistentData().putDouble("Stomach", ((entity.getPersistentData().getDouble("Stomach")) + 10));
 					}
 				}
-				if ((BlockTags.getCollection().getTagByID(new ResourceLocation(("flowers").toLowerCase(java.util.Locale.ENGLISH)))
-						.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))) {
+				if (((BlockTags.getCollection()
+						.getTagByID(new ResourceLocation(("wildfarmcraft:wfc_edible_ground_crops").toLowerCase(java.util.Locale.ENGLISH)))
+						.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))
+						|| ((BlockTags.getCollection().getTagByID(new ResourceLocation(("flowers").toLowerCase(java.util.Locale.ENGLISH)))
+								.contains((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))
+								|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.TALL_GRASS.getDefaultState()
+										.getBlock())))) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 						BlockState _bs = BreakingBlock.block.getDefaultState();
@@ -144,47 +149,9 @@ public class MedOmnivoreFeedProcedure extends WildfarmcraftModElements.ModElemen
 					}
 					entity.getPersistentData().putDouble("Stomach", ((entity.getPersistentData().getDouble("Stomach")) + 5));
 				}
-				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.TALL_GRASS.getDefaultState().getBlock())) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BreakingBlock.block.getDefaultState();
-						world.setBlockState(_bp, _bs, 3);
-					}
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) (y + 1), (int) z);
-						BlockState _bs = BreakingBlock.block.getDefaultState();
-						world.setBlockState(_bp, _bs, 3);
-					}
-					if (world instanceof World && !world.isRemote()) {
-						((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.break")),
-								SoundCategory.NEUTRAL, (float) 0.5, (float) 1);
-					} else {
-						((World) world).playSound(x, y, z,
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.break")),
-								SoundCategory.NEUTRAL, (float) 0.5, (float) 1, false);
-					}
-					entity.getPersistentData().putDouble("Stomach", ((entity.getPersistentData().getDouble("Stomach")) + 10));
-				}
-				if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.MELON.getDefaultState().getBlock())) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
-						BlockState _bs = BreakingBlock.block.getDefaultState();
-						world.setBlockState(_bp, _bs, 3);
-					}
-					if (world instanceof World && !world.isRemote()) {
-						((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.break")),
-								SoundCategory.NEUTRAL, (float) 0.5, (float) 1);
-					} else {
-						((World) world).playSound(x, y, z,
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.break")),
-								SoundCategory.NEUTRAL, (float) 0.5, (float) 1, false);
-					}
-					entity.getPersistentData().putDouble("Stomach", ((entity.getPersistentData().getDouble("Stomach")) + 15));
-				}
-				if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.PUMPKIN.getDefaultState()
-						.getBlock())) {
+				if ((((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.PUMPKIN.getDefaultState().getBlock())
+						|| ((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.MELON.getDefaultState()
+								.getBlock()))) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) (y - 1), (int) z);
 						BlockState _bs = BreakingBlock.block.getDefaultState();
@@ -237,8 +204,9 @@ public class MedOmnivoreFeedProcedure extends WildfarmcraftModElements.ModElemen
 					}
 					entity.getPersistentData().putDouble("Stomach", ((entity.getPersistentData().getDouble("Stomach")) + 100));
 				}
-				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.BROWN_MUSHROOM.getDefaultState()
-						.getBlock())) {
+				if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.BROWN_MUSHROOM.getDefaultState().getBlock())
+						|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.RED_MUSHROOM.getDefaultState()
+								.getBlock()))) {
 					{
 						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 						BlockState _bs = BreakingBlock.block.getDefaultState();
@@ -253,24 +221,7 @@ public class MedOmnivoreFeedProcedure extends WildfarmcraftModElements.ModElemen
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.break")),
 								SoundCategory.NEUTRAL, (float) 0.5, (float) 1, false);
 					}
-					entity.getPersistentData().putDouble("Stomach", ((entity.getPersistentData().getDouble("Stomach")) + 20));
-				}
-				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.RED_MUSHROOM.getDefaultState().getBlock())) {
-					{
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						BlockState _bs = BreakingBlock.block.getDefaultState();
-						world.setBlockState(_bp, _bs, 3);
-					}
-					if (world instanceof World && !world.isRemote()) {
-						((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.break")),
-								SoundCategory.NEUTRAL, (float) 0.5, (float) 1);
-					} else {
-						((World) world).playSound(x, y, z,
-								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.grass.break")),
-								SoundCategory.NEUTRAL, (float) 0.5, (float) 1, false);
-					}
-					entity.getPersistentData().putDouble("Stomach", ((entity.getPersistentData().getDouble("Stomach")) + 20));
+					entity.getPersistentData().putDouble("Stomach", ((entity.getPersistentData().getDouble("Stomach")) + 15));
 				}
 				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PastureGrownBlock.block.getDefaultState()
 						.getBlock())) {
