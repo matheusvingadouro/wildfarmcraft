@@ -80,7 +80,7 @@ public class BrownDucklingEntity extends WildfarmcraftModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -2381482, -6466020, new Item.Properties().group(WildFarmCraftSpawnEggsItemGroup.tab))
+		elements.items.add(() -> new SpawnEggItem(entity, -6918851, -6466020, new Item.Properties().group(WildFarmCraftSpawnEggsItemGroup.tab))
 				.setRegistryName("brown_duckling_spawn_egg"));
 	}
 

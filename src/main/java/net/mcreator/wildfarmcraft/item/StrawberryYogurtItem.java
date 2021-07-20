@@ -17,11 +17,11 @@ import net.minecraft.entity.LivingEntity;
 import net.mcreator.wildfarmcraft.WildfarmcraftModElements;
 
 @WildfarmcraftModElements.ModElement.Tag
-public class FruitYogurtItem extends WildfarmcraftModElements.ModElement {
-	@ObjectHolder("wildfarmcraft:fruit_yogurt")
+public class StrawberryYogurtItem extends WildfarmcraftModElements.ModElement {
+	@ObjectHolder("wildfarmcraft:strawberry_yogurt")
 	public static final Item block = null;
-	public FruitYogurtItem(WildfarmcraftModElements instance) {
-		super(instance, 90);
+	public StrawberryYogurtItem(WildfarmcraftModElements instance) {
+		super(instance, 439);
 	}
 
 	@Override
@@ -31,8 +31,8 @@ public class FruitYogurtItem extends WildfarmcraftModElements.ModElement {
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(16).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(5).saturation(4f).build()));
-			setRegistryName("fruit_yogurt");
+					.food((new Food.Builder()).hunger(6).saturation(4.5f).build()));
+			setRegistryName("strawberry_yogurt");
 		}
 
 		@Override

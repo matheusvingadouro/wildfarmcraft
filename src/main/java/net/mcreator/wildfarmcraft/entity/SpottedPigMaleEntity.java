@@ -84,7 +84,7 @@ public class SpottedPigMaleEntity extends WildfarmcraftModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -2586237, -2586237, new Item.Properties().group(WildFarmCraftSpawnEggsItemGroup.tab))
+		elements.items.add(() -> new SpawnEggItem(entity, -4025713, -13684945, new Item.Properties().group(WildFarmCraftSpawnEggsItemGroup.tab))
 				.setRegistryName("spotted_pig_male_spawn_egg"));
 	}
 

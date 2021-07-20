@@ -1,0 +1,28 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "wildfarmcraft:strawberry_item"
+    },
+    {
+      "item": "wildfarmcraft:strawberry_item"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "wildfarmcraft:bucketofcuddles"
+    },
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "wildfarmcraft:strawberry_yogurt",
+    "count": 3
+  }
+}
