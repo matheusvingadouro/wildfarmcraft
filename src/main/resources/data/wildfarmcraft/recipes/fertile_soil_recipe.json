@@ -1,0 +1,16 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "minecraft:dirt"
+    }
+  ],
+  "result": {
+    "item": "wildfarmcraft:fertilesoil",
+    "count": 1
+  }
+}

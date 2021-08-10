@@ -20,16 +20,16 @@ import java.util.Map;
 import java.util.HashMap;
 
 @WildfarmcraftModElements.ModElement.Tag
-public class InitialEntityTagsRabbitsAndLlamasProcedure extends WildfarmcraftModElements.ModElement {
-	public InitialEntityTagsRabbitsAndLlamasProcedure(WildfarmcraftModElements instance) {
-		super(instance, 276);
+public class InitialTagsRabbitsProcedure extends WildfarmcraftModElements.ModElement {
+	public InitialTagsRabbitsProcedure(WildfarmcraftModElements instance) {
+		super(instance, 482);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				WildfarmcraftMod.LOGGER.warn("Failed to load dependency entity for procedure InitialEntityTagsRabbitsAndLlamas!");
+				WildfarmcraftMod.LOGGER.warn("Failed to load dependency entity for procedure InitialTagsRabbits!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");

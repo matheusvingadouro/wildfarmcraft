@@ -106,7 +106,7 @@ public class MedOmnivoreFeedProcedure extends WildfarmcraftModElements.ModElemen
 											.getDefaultState().getBlock()))))) {
 						{
 							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-							BlockState _bs = Blocks.AIR.getDefaultState();
+							BlockState _bs = BreakingBlock.block.getDefaultState();
 							world.setBlockState(_bp, _bs, 3);
 						}
 						if (world instanceof World && !world.isRemote()) {

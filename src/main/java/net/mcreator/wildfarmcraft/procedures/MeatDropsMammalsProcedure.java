@@ -125,7 +125,7 @@ public class MeatDropsMammalsProcedure extends WildfarmcraftModElements.ModEleme
 				}
 			}
 			if ((((entity.getPersistentData().getString("DropType"))).equals("BeefySheep"))) {
-				if (((entity.getPersistentData().getDouble("Stomach")) >= 50)) {
+				if (((entity.getPersistentData().getDouble("Stomach")) >= 25)) {
 					for (int index8 = 0; index8 < (int) (4); index8++) {
 						if (world instanceof World && !world.isRemote()) {
 							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Items.MUTTON, (int) (1)));
@@ -153,8 +153,9 @@ public class MeatDropsMammalsProcedure extends WildfarmcraftModElements.ModEleme
 					world.addEntity(entityToSpawn);
 				}
 			}
-			if ((((entity.getPersistentData().getString("DropType"))).equals("SkinnySheep"))) {
-				if (((entity.getPersistentData().getDouble("Stomach")) >= 50)) {
+			if (((((entity.getPersistentData().getString("DropType"))).equals("SkinnySheep"))
+					|| (((entity.getPersistentData().getString("DropType"))).equals("SkinnyGoat")))) {
+				if (((entity.getPersistentData().getDouble("Stomach")) >= 25)) {
 					for (int index10 = 0; index10 < (int) (2); index10++) {
 						if (world instanceof World && !world.isRemote()) {
 							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Items.MUTTON, (int) (1)));
@@ -183,7 +184,7 @@ public class MeatDropsMammalsProcedure extends WildfarmcraftModElements.ModEleme
 				}
 			}
 			if ((((entity.getPersistentData().getString("DropType"))).equals("Pig"))) {
-				if (((entity.getPersistentData().getDouble("Stomach")) >= 50)) {
+				if (((entity.getPersistentData().getDouble("Stomach")) >= 25)) {
 					for (int index12 = 0; index12 < (int) (3); index12++) {
 						if (world instanceof World && !world.isRemote()) {
 							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Items.PORKCHOP, (int) (1)));
@@ -207,7 +208,7 @@ public class MeatDropsMammalsProcedure extends WildfarmcraftModElements.ModEleme
 				}
 			}
 			if ((((entity.getPersistentData().getString("DropType"))).equals("SkinnyPig"))) {
-				if (((entity.getPersistentData().getDouble("Stomach")) >= 50)) {
+				if (((entity.getPersistentData().getDouble("Stomach")) >= 25)) {
 					for (int index14 = 0; index14 < (int) (2); index14++) {
 						if (world instanceof World && !world.isRemote()) {
 							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Items.PORKCHOP, (int) (1)));

@@ -12,6 +12,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.wildfarmcraft.item.RawLlamaMeatItem;
 import net.mcreator.wildfarmcraft.WildfarmcraftModElements;
 import net.mcreator.wildfarmcraft.WildfarmcraftMod;
 
@@ -84,6 +85,35 @@ public class MeatDropsMammals2Procedure extends WildfarmcraftModElements.ModElem
 						entityToSpawn.setPickupDelay((int) 10);
 						world.addEntity(entityToSpawn);
 					}
+				}
+			}
+			if ((((entity.getPersistentData().getString("DropType"))).equals("Llama"))) {
+				if (((entity.getPersistentData().getDouble("Stomach")) >= 25)) {
+					for (int index0 = 0; index0 < (int) (3); index0++) {
+						if (world instanceof World && !world.isRemote()) {
+							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(RawLlamaMeatItem.block, (int) (1)));
+							entityToSpawn.setPickupDelay((int) 10);
+							world.addEntity(entityToSpawn);
+						}
+					}
+				} else {
+					for (int index1 = 0; index1 < (int) (2); index1++) {
+						if (world instanceof World && !world.isRemote()) {
+							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(RawLlamaMeatItem.block, (int) (1)));
+							entityToSpawn.setPickupDelay((int) 10);
+							world.addEntity(entityToSpawn);
+						}
+					}
+				}
+				if (world instanceof World && !world.isRemote()) {
+					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Items.BONE, (int) (1)));
+					entityToSpawn.setPickupDelay((int) 10);
+					world.addEntity(entityToSpawn);
+				}
+				if (world instanceof World && !world.isRemote()) {
+					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(Items.LEATHER, (int) (1)));
+					entityToSpawn.setPickupDelay((int) 10);
+					world.addEntity(entityToSpawn);
 				}
 			}
 		}

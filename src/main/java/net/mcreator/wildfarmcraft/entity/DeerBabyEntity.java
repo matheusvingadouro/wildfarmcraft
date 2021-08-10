@@ -92,7 +92,7 @@ public class DeerBabyEntity extends WildfarmcraftModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.5);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 6);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
@@ -121,7 +121,7 @@ public class DeerBabyEntity extends WildfarmcraftModElements.ModElement {
 		protected void registerGoals() {
 			super.registerGoals();
 			this.goalSelector.addGoal(1, new LookAtGoal(this, DeerFemaleEntity.CustomEntity.class, (float) 6));
-			this.goalSelector.addGoal(2, new AvoidEntityGoal(this, PlayerEntity.class, (float) 8, 1, 3) {
+			this.goalSelector.addGoal(2, new AvoidEntityGoal(this, PlayerEntity.class, (float) 8, 1, 2.5) {
 				@Override
 				public boolean shouldExecute() {
 					double x = CustomEntity.this.getPosX();
@@ -200,6 +200,11 @@ public class DeerBabyEntity extends WildfarmcraftModElements.ModElement {
 		}
 
 		@Override
+		public net.minecraft.util.SoundEvent getAmbientSound() {
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wildfarmcraft:deer"));
+		}
+
+		@Override
 		public void playStepSound(BlockPos pos, BlockState blockIn) {
 			this.playSound((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.sheep.step")), 0.15f,
 					1);
@@ -207,12 +212,12 @@ public class DeerBabyEntity extends WildfarmcraftModElements.ModElement {
 
 		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wildfarmcraft:deer"));
 		}
 
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wildfarmcraft:deer"));
 		}
 
 		@Override

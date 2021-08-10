@@ -11,6 +11,8 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.entity.passive.horse.TraderLlamaEntity;
+import net.minecraft.entity.passive.horse.LlamaEntity;
 import net.minecraft.entity.passive.SheepEntity;
 import net.minecraft.entity.passive.RabbitEntity;
 import net.minecraft.entity.passive.PigEntity;
@@ -24,6 +26,8 @@ import net.minecraft.entity.ILivingEntityData;
 import net.minecraft.entity.Entity;
 
 import net.mcreator.wildfarmcraft.world.DoWFCReplaceVanillaGameRule;
+import net.mcreator.wildfarmcraft.entity.WhiteLlamaMaleEntity;
+import net.mcreator.wildfarmcraft.entity.WhiteLlamaFemaleEntity;
 import net.mcreator.wildfarmcraft.entity.SpottedSowEntity;
 import net.mcreator.wildfarmcraft.entity.SpottedPigMaleEntity;
 import net.mcreator.wildfarmcraft.entity.RedRhodeRoosterEntity;
@@ -38,8 +42,8 @@ import net.mcreator.wildfarmcraft.entity.MerinoRamEntity;
 import net.mcreator.wildfarmcraft.entity.MerinoEweEntity;
 import net.mcreator.wildfarmcraft.entity.LeghornRoosterEntity;
 import net.mcreator.wildfarmcraft.entity.LeghornHenEntity;
-import net.mcreator.wildfarmcraft.entity.IberianCowEntity;
-import net.mcreator.wildfarmcraft.entity.HolsteinBullEntity;
+import net.mcreator.wildfarmcraft.entity.IberianBullEntity;
+import net.mcreator.wildfarmcraft.entity.HolsteinCowEntity;
 import net.mcreator.wildfarmcraft.entity.HighlandsCowEntity;
 import net.mcreator.wildfarmcraft.entity.HighlandsBullEntity;
 import net.mcreator.wildfarmcraft.entity.HampshireRamEntity;
@@ -173,7 +177,7 @@ public class ReplacevanillaProcedure extends WildfarmcraftModElements.ModElement
 								} else {
 									if ((Math.random() < 0.5)) {
 										if (world instanceof ServerWorld) {
-											Entity entityToSpawn = new IberianCowEntity.CustomEntity(IberianCowEntity.entity, (World) world);
+											Entity entityToSpawn = new IberianBullEntity.CustomEntity(IberianBullEntity.entity, (World) world);
 											entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 											if (entityToSpawn instanceof MobEntity)
 												((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world,
@@ -183,7 +187,7 @@ public class ReplacevanillaProcedure extends WildfarmcraftModElements.ModElement
 										}
 									} else {
 										if (world instanceof ServerWorld) {
-											Entity entityToSpawn = new HolsteinBullEntity.CustomEntity(HolsteinBullEntity.entity, (World) world);
+											Entity entityToSpawn = new HolsteinCowEntity.CustomEntity(HolsteinCowEntity.entity, (World) world);
 											entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 											if (entityToSpawn instanceof MobEntity)
 												((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world,
@@ -444,6 +448,39 @@ public class ReplacevanillaProcedure extends WildfarmcraftModElements.ModElement
 							} else {
 								if (world instanceof ServerWorld) {
 									Entity entityToSpawn = new DutchRabbitMaleEntity.CustomEntity(DutchRabbitMaleEntity.entity, (World) world);
+									entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+									if (entityToSpawn instanceof MobEntity)
+										((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world,
+												world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED,
+												(ILivingEntityData) null, (CompoundNBT) null);
+									world.addEntity(entityToSpawn);
+								}
+							}
+						}
+						if (!entity.world.isRemote())
+							entity.remove();
+					}
+					if (((entity instanceof LlamaEntity) && (!(entity instanceof TraderLlamaEntity)))) {
+						if ((((Entity) world.getEntitiesWithinAABB(VillagerEntity.class,
+								new AxisAlignedBB(x - (40 / 2d), y - (40 / 2d), z - (40 / 2d), x + (40 / 2d), y + (40 / 2d), z + (40 / 2d)), null)
+								.stream().sorted(new Object() {
+									Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+										return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+									}
+								}.compareDistOf(x, y, z)).findFirst().orElse(null)) != null)) {
+							if ((Math.random() < 0.5)) {
+								if (world instanceof ServerWorld) {
+									Entity entityToSpawn = new WhiteLlamaFemaleEntity.CustomEntity(WhiteLlamaFemaleEntity.entity, (World) world);
+									entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
+									if (entityToSpawn instanceof MobEntity)
+										((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world,
+												world.getDifficultyForLocation(entityToSpawn.getPosition()), SpawnReason.MOB_SUMMONED,
+												(ILivingEntityData) null, (CompoundNBT) null);
+									world.addEntity(entityToSpawn);
+								}
+							} else {
+								if (world instanceof ServerWorld) {
+									Entity entityToSpawn = new WhiteLlamaMaleEntity.CustomEntity(WhiteLlamaMaleEntity.entity, (World) world);
 									entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 									if (entityToSpawn instanceof MobEntity)
 										((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world,

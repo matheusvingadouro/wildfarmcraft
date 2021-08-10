@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "wildfarmcraft:cattle_milk"
+    "wildfarmcraft:cattle_milk",
+    "wildfarmcraft:goat_milk"
   ]
 }

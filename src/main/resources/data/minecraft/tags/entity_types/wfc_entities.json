@@ -81,6 +81,21 @@
     "wildfarmcraft:spotted_pig_male",
     "wildfarmcraft:brown_duckling",
     "wildfarmcraft:brown_duck_female",
-    "wildfarmcraft:brown_duck_male"
+    "wildfarmcraft:brown_duck_male",
+    "wildfarmcraft:ibex_baby",
+    "wildfarmcraft:ibex_female",
+    "wildfarmcraft:ibex_male",
+    "wildfarmcraft:saanen_goat_baby",
+    "wildfarmcraft:saanen_goat_female",
+    "wildfarmcraft:saanen_goat_male",
+    "wildfarmcraft:red_nubian_goat_baby",
+    "wildfarmcraft:red_nubian_goat_female",
+    "wildfarmcraft:red_nubian_goat_male",
+    "wildfarmcraft:guanaco_baby",
+    "wildfarmcraft:guanaco_female",
+    "wildfarmcraft:guanaco_male",
+    "wildfarmcraft:white_llama_baby",
+    "wildfarmcraft:white_llama_female",
+    "wildfarmcraft:white_llama_male"
   ]
 }

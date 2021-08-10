@@ -17,6 +17,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.wildfarmcraft.item.GoatMilkItem;
 import net.mcreator.wildfarmcraft.item.CattleMilkItem;
 import net.mcreator.wildfarmcraft.block.MilkTankBlock;
 import net.mcreator.wildfarmcraft.WildfarmcraftModElements;
@@ -64,64 +65,119 @@ public class MilkingMilkTankProcedure extends WildfarmcraftModElements.ModElemen
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == MilkTankBlock.block.getDefaultState().getBlock())) {
-			if ((((new Object() {
+			if (((new Object() {
 				public double getValue(IWorld world, BlockPos pos, String tag) {
 					TileEntity tileEntity = world.getTileEntity(pos);
 					if (tileEntity != null)
 						return tileEntity.getTileData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "MilkAmount")) >= 1) && ((new Object() {
-				public double getValue(IWorld world, BlockPos pos, String tag) {
-					TileEntity tileEntity = world.getTileEntity(pos);
-					if (tileEntity != null)
-						return tileEntity.getTileData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "CowMilk")) >= 1))) {
-				if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
-						.getItem() == new ItemStack(Items.BUCKET, (int) (1)).getItem())) {
-					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(Items.BUCKET, (int) (1));
-						((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-								((PlayerEntity) entity).container.func_234641_j_());
+			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "MilkAmount")) >= 1)) {
+				if (((new Object() {
+					public double getValue(IWorld world, BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
 					}
-					if (entity instanceof PlayerEntity) {
-						ItemStack _setstack = new ItemStack(CattleMilkItem.block, (int) (1));
-						_setstack.setCount((int) 1);
-						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "CowMilk")) >= 1)) {
+					if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+							.getItem() == new ItemStack(Items.BUCKET, (int) (1)).getItem())) {
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(Items.BUCKET, (int) (1));
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
+						}
+						if (entity instanceof PlayerEntity) {
+							ItemStack _setstack = new ItemStack(CattleMilkItem.block, (int) (1));
+							_setstack.setCount((int) 1);
+							ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+						}
+						if (!world.isRemote()) {
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							TileEntity _tileEntity = world.getTileEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_tileEntity != null)
+								_tileEntity.getTileData().putDouble("CowMilk", ((new Object() {
+									public double getValue(IWorld world, BlockPos pos, String tag) {
+										TileEntity tileEntity = world.getTileEntity(pos);
+										if (tileEntity != null)
+											return tileEntity.getTileData().getDouble(tag);
+										return -1;
+									}
+								}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "CowMilk")) - 1));
+							if (world instanceof World)
+								((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+						}
+						if (!world.isRemote()) {
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							TileEntity _tileEntity = world.getTileEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_tileEntity != null)
+								_tileEntity.getTileData().putDouble("MilkAmount", ((new Object() {
+									public double getValue(IWorld world, BlockPos pos, String tag) {
+										TileEntity tileEntity = world.getTileEntity(pos);
+										if (tileEntity != null)
+											return tileEntity.getTileData().getDouble(tag);
+										return -1;
+									}
+								}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "MilkAmount")) - 1));
+							if (world instanceof World)
+								((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+						}
 					}
-					if (!world.isRemote()) {
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						TileEntity _tileEntity = world.getTileEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_tileEntity != null)
-							_tileEntity.getTileData().putDouble("CowMilk", ((new Object() {
-								public double getValue(IWorld world, BlockPos pos, String tag) {
-									TileEntity tileEntity = world.getTileEntity(pos);
-									if (tileEntity != null)
-										return tileEntity.getTileData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "CowMilk")) - 1));
-						if (world instanceof World)
-							((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+				} else if (((new Object() {
+					public double getValue(IWorld world, BlockPos pos, String tag) {
+						TileEntity tileEntity = world.getTileEntity(pos);
+						if (tileEntity != null)
+							return tileEntity.getTileData().getDouble(tag);
+						return -1;
 					}
-					if (!world.isRemote()) {
-						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-						TileEntity _tileEntity = world.getTileEntity(_bp);
-						BlockState _bs = world.getBlockState(_bp);
-						if (_tileEntity != null)
-							_tileEntity.getTileData().putDouble("MilkAmount", ((new Object() {
-								public double getValue(IWorld world, BlockPos pos, String tag) {
-									TileEntity tileEntity = world.getTileEntity(pos);
-									if (tileEntity != null)
-										return tileEntity.getTileData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "MilkAmount")) - 1));
-						if (world instanceof World)
-							((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "GoatMilk")) >= 1)) {
+					if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+							.getItem() == new ItemStack(Items.BUCKET, (int) (1)).getItem())) {
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(Items.BUCKET, (int) (1));
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
+						}
+						if (entity instanceof PlayerEntity) {
+							ItemStack _setstack = new ItemStack(GoatMilkItem.block, (int) (1));
+							_setstack.setCount((int) 1);
+							ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+						}
+						if (!world.isRemote()) {
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							TileEntity _tileEntity = world.getTileEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_tileEntity != null)
+								_tileEntity.getTileData().putDouble("GoatMilk", ((new Object() {
+									public double getValue(IWorld world, BlockPos pos, String tag) {
+										TileEntity tileEntity = world.getTileEntity(pos);
+										if (tileEntity != null)
+											return tileEntity.getTileData().getDouble(tag);
+										return -1;
+									}
+								}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "GoatMilk")) - 1));
+							if (world instanceof World)
+								((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+						}
+						if (!world.isRemote()) {
+							BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+							TileEntity _tileEntity = world.getTileEntity(_bp);
+							BlockState _bs = world.getBlockState(_bp);
+							if (_tileEntity != null)
+								_tileEntity.getTileData().putDouble("MilkAmount", ((new Object() {
+									public double getValue(IWorld world, BlockPos pos, String tag) {
+										TileEntity tileEntity = world.getTileEntity(pos);
+										if (tileEntity != null)
+											return tileEntity.getTileData().getDouble(tag);
+										return -1;
+									}
+								}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "MilkAmount")) - 1));
+							if (world instanceof World)
+								((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+						}
 					}
 				}
 			}
@@ -178,6 +234,51 @@ public class MilkingMilkTankProcedure extends WildfarmcraftModElements.ModElemen
 							((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 					}
 				}
+				if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+						.getItem() == new ItemStack(GoatMilkItem.block, (int) (1)).getItem())) {
+					if (entity instanceof PlayerEntity) {
+						ItemStack _stktoremove = new ItemStack(GoatMilkItem.block, (int) (1));
+						((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+								((PlayerEntity) entity).container.func_234641_j_());
+					}
+					if (entity instanceof PlayerEntity) {
+						ItemStack _setstack = new ItemStack(Items.BUCKET, (int) (1));
+						_setstack.setCount((int) 1);
+						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+					}
+					if (!world.isRemote()) {
+						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+						TileEntity _tileEntity = world.getTileEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_tileEntity != null)
+							_tileEntity.getTileData().putDouble("GoatMilk", ((new Object() {
+								public double getValue(IWorld world, BlockPos pos, String tag) {
+									TileEntity tileEntity = world.getTileEntity(pos);
+									if (tileEntity != null)
+										return tileEntity.getTileData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "GoatMilk")) + 1));
+						if (world instanceof World)
+							((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+					}
+					if (!world.isRemote()) {
+						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+						TileEntity _tileEntity = world.getTileEntity(_bp);
+						BlockState _bs = world.getBlockState(_bp);
+						if (_tileEntity != null)
+							_tileEntity.getTileData().putDouble("MilkAmount", ((new Object() {
+								public double getValue(IWorld world, BlockPos pos, String tag) {
+									TileEntity tileEntity = world.getTileEntity(pos);
+									if (tileEntity != null)
+										return tileEntity.getTileData().getDouble(tag);
+									return -1;
+								}
+							}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "MilkAmount")) + 1));
+						if (world instanceof World)
+							((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+					}
+				}
 			}
 			if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == (ItemStack.EMPTY)
 					.getItem())) {
@@ -200,6 +301,16 @@ public class MilkingMilkTankProcedure extends WildfarmcraftModElements.ModElemen
 							return -1;
 						}
 					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "CowMilk"))))), (false));
+				}
+				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent((("Goat Milk: ") + "" + ((new Object() {
+						public double getValue(IWorld world, BlockPos pos, String tag) {
+							TileEntity tileEntity = world.getTileEntity(pos);
+							if (tileEntity != null)
+								return tileEntity.getTileData().getDouble(tag);
+							return -1;
+						}
+					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "GoatMilk"))))), (false));
 				}
 			}
 		}

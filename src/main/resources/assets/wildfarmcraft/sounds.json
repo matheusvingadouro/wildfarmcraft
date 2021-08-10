@@ -109,5 +109,50 @@
         "stream": false
       }
     ]
+  },
+  "deer": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:deer",
+        "stream": false
+      }
+    ]
+  },
+  "deerdeath": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:deerdeath",
+        "stream": false
+      }
+    ]
+  },
+  "goatdeath": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:goatdeath",
+        "stream": false
+      }
+    ]
+  },
+  "goat": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:goat",
+        "stream": false
+      }
+    ]
+  },
+  "goathurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "wildfarmcraft:goathurt",
+        "stream": false
+      }
+    ]
   }
 }

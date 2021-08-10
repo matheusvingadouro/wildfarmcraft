@@ -67,6 +67,14 @@ public class WildfarmcraftModElements {
 		sounds.put(new ResourceLocation("wildfarmcraft", "bison"), new net.minecraft.util.SoundEvent(new ResourceLocation("wildfarmcraft", "bison")));
 		sounds.put(new ResourceLocation("wildfarmcraft", "bisonhurt"),
 				new net.minecraft.util.SoundEvent(new ResourceLocation("wildfarmcraft", "bisonhurt")));
+		sounds.put(new ResourceLocation("wildfarmcraft", "deer"), new net.minecraft.util.SoundEvent(new ResourceLocation("wildfarmcraft", "deer")));
+		sounds.put(new ResourceLocation("wildfarmcraft", "deerdeath"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("wildfarmcraft", "deerdeath")));
+		sounds.put(new ResourceLocation("wildfarmcraft", "goatdeath"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("wildfarmcraft", "goatdeath")));
+		sounds.put(new ResourceLocation("wildfarmcraft", "goat"), new net.minecraft.util.SoundEvent(new ResourceLocation("wildfarmcraft", "goat")));
+		sounds.put(new ResourceLocation("wildfarmcraft", "goathurt"),
+				new net.minecraft.util.SoundEvent(new ResourceLocation("wildfarmcraft", "goathurt")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("wildfarmcraft").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();

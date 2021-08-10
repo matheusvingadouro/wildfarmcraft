@@ -73,7 +73,7 @@ import com.google.common.collect.ImmutableMap;
 public class DeerFemaleEntity extends WildfarmcraftModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.9f, 1.2f)).build("deer_female").setRegistryName("deer_female");
+			.size(0.9f, 1.8f)).build("deer_female").setRegistryName("deer_female");
 	public DeerFemaleEntity(WildfarmcraftModElements instance) {
 		super(instance, 372);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new DeerFemaleRenderer.ModelRegisterHandler());
@@ -107,7 +107,7 @@ public class DeerFemaleEntity extends WildfarmcraftModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.5);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.3);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 12);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 1);
@@ -136,26 +136,7 @@ public class DeerFemaleEntity extends WildfarmcraftModElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new AvoidEntityGoal(this, PlayerEntity.class, (float) 8, 1, 2.5) {
-				@Override
-				public boolean shouldExecute() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldExecute() && NottamedconditionProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-
-				@Override
-				public boolean shouldContinueExecuting() {
-					double x = CustomEntity.this.getPosX();
-					double y = CustomEntity.this.getPosY();
-					double z = CustomEntity.this.getPosZ();
-					Entity entity = CustomEntity.this;
-					return super.shouldContinueExecuting() && NottamedconditionProcedure.executeProcedure(ImmutableMap.of("entity", entity));
-				}
-			});
-			this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false) {
+			this.targetSelector.addGoal(1, new NearestAttackableTargetGoal(this, PlayerEntity.class, false, false) {
 				@Override
 				public boolean shouldExecute() {
 					double x = CustomEntity.this.getPosX();
@@ -174,7 +155,7 @@ public class DeerFemaleEntity extends WildfarmcraftModElements.ModElement {
 					return super.shouldContinueExecuting() && IsAngryConditionProcedure.executeProcedure(ImmutableMap.of("entity", entity));
 				}
 			});
-			this.goalSelector.addGoal(3, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false) {
+			this.goalSelector.addGoal(2, new FollowOwnerGoal(this, 1, (float) 10, (float) 2, false) {
 				@Override
 				public boolean shouldExecute() {
 					double x = CustomEntity.this.getPosX();
@@ -191,6 +172,25 @@ public class DeerFemaleEntity extends WildfarmcraftModElements.ModElement {
 					double z = CustomEntity.this.getPosZ();
 					Entity entity = CustomEntity.this;
 					return super.shouldContinueExecuting() && FollowconditionProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+			});
+			this.goalSelector.addGoal(3, new AvoidEntityGoal(this, PlayerEntity.class, (float) 10, 1, 2.5) {
+				@Override
+				public boolean shouldExecute() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldExecute() && NottamedconditionProcedure.executeProcedure(ImmutableMap.of("entity", entity));
+				}
+
+				@Override
+				public boolean shouldContinueExecuting() {
+					double x = CustomEntity.this.getPosX();
+					double y = CustomEntity.this.getPosY();
+					double z = CustomEntity.this.getPosZ();
+					Entity entity = CustomEntity.this;
+					return super.shouldContinueExecuting() && NottamedconditionProcedure.executeProcedure(ImmutableMap.of("entity", entity));
 				}
 			});
 			this.goalSelector.addGoal(4,
@@ -235,6 +235,11 @@ public class DeerFemaleEntity extends WildfarmcraftModElements.ModElement {
 		}
 
 		@Override
+		public net.minecraft.util.SoundEvent getAmbientSound() {
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wildfarmcraft:deer"));
+		}
+
+		@Override
 		public void playStepSound(BlockPos pos, BlockState blockIn) {
 			this.playSound((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.sheep.step")), 0.15f,
 					1);
@@ -242,12 +247,12 @@ public class DeerFemaleEntity extends WildfarmcraftModElements.ModElement {
 
 		@Override
 		public net.minecraft.util.SoundEvent getHurtSound(DamageSource ds) {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wildfarmcraft:deer"));
 		}
 
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
-			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("wildfarmcraft:deerdeath"));
 		}
 
 		@Override

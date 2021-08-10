@@ -108,10 +108,18 @@ public class ExtraDropsProcedure extends WildfarmcraftModElements.ModElement {
 						world.addEntity(entityToSpawn);
 					}
 				} else {
-					if (world instanceof World && !world.isRemote()) {
-						ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(WoolTuftItem.block, (int) (1)));
-						entityToSpawn.setPickupDelay((int) 10);
-						world.addEntity(entityToSpawn);
+					if ((((entity.getPersistentData().getString("FurType"))).equals("WhiteFur"))) {
+						if (world instanceof World && !world.isRemote()) {
+							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(WoolTuftWhiteItem.block, (int) (1)));
+							entityToSpawn.setPickupDelay((int) 10);
+							world.addEntity(entityToSpawn);
+						}
+					} else {
+						if (world instanceof World && !world.isRemote()) {
+							ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(WoolTuftItem.block, (int) (1)));
+							entityToSpawn.setPickupDelay((int) 10);
+							world.addEntity(entityToSpawn);
+						}
 					}
 				}
 			}

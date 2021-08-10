@@ -17,6 +17,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 
+import net.mcreator.wildfarmcraft.item.GoatMilkItem;
 import net.mcreator.wildfarmcraft.item.CattleMilkItem;
 import net.mcreator.wildfarmcraft.WildfarmcraftModElements;
 import net.mcreator.wildfarmcraft.WildfarmcraftMod;
@@ -71,11 +72,6 @@ public class MilkingProcedure extends WildfarmcraftModElements.ModElement {
 		if (((entity.getPersistentData().getDouble("MilkAmount")) >= 1)) {
 			if ((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
 					.getItem() == new ItemStack(Items.BUCKET, (int) (1)).getItem())) {
-				if (sourceentity instanceof PlayerEntity) {
-					ItemStack _stktoremove = new ItemStack(Items.BUCKET, (int) (1));
-					((PlayerEntity) sourceentity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-							((PlayerEntity) sourceentity).container.func_234641_j_());
-				}
 				if (((((entity.getPersistentData().getString("DropType"))).equals("SkinnyCow"))
 						|| (((entity.getPersistentData().getString("DropType"))).equals("BeefCow")))) {
 					if (sourceentity instanceof PlayerEntity) {
@@ -83,11 +79,30 @@ public class MilkingProcedure extends WildfarmcraftModElements.ModElement {
 						_setstack.setCount((int) 1);
 						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
 					}
-				} else {
 					if (sourceentity instanceof PlayerEntity) {
-						ItemStack _setstack = new ItemStack(Items.MILK_BUCKET, (int) (1));
-						_setstack.setCount((int) 1);
-						ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
+						ItemStack _stktoremove = new ItemStack(Items.BUCKET, (int) (1));
+						((PlayerEntity) sourceentity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+								((PlayerEntity) sourceentity).container.func_234641_j_());
+					}
+				} else {
+					if (((((entity.getPersistentData().getString("DropType"))).equals("SkinnyGoat"))
+							|| (((entity.getPersistentData().getString("DropType"))).equals("BeefGoat")))) {
+						if (sourceentity instanceof PlayerEntity) {
+							ItemStack _setstack = new ItemStack(GoatMilkItem.block, (int) (1));
+							_setstack.setCount((int) 1);
+							ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
+						}
+						if (sourceentity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(Items.BUCKET, (int) (1));
+							((PlayerEntity) sourceentity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) sourceentity).container.func_234641_j_());
+						}
+					} else {
+						if (sourceentity instanceof PlayerEntity) {
+							ItemStack _setstack = new ItemStack(Items.MILK_BUCKET, (int) (1));
+							_setstack.setCount((int) 1);
+							ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) sourceentity), _setstack);
+						}
 					}
 				}
 				if (world instanceof World && !world.isRemote()) {

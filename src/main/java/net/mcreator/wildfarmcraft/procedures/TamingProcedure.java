@@ -106,8 +106,10 @@ public class TamingProcedure extends WildfarmcraftModElements.ModElement {
 					}
 				}
 			}
-			if (((((entity.getPersistentData().getString("DropType"))).equals("BabyDeer"))
-					|| (((entity.getPersistentData().getString("DropType"))).equals("Lamb")))) {
+			if (((((((entity.getPersistentData().getString("DropType"))).equals("BabyDeer"))
+					|| (((entity.getPersistentData().getString("DropType"))).equals("Lamb")))
+					|| (((entity.getPersistentData().getString("DropType"))).equals("BabyGoat")))
+					|| (((entity.getPersistentData().getString("DropType"))).equals("BabyLlama")))) {
 				if ((((sourceentity instanceof LivingEntity) ? ((LivingEntity) sourceentity).getHeldItemMainhand() : ItemStack.EMPTY)
 						.getItem() == new ItemStack(Blocks.SWEET_BERRY_BUSH, (int) (1)).getItem())) {
 					if ((entity instanceof TameableEntity) && (sourceentity instanceof PlayerEntity)) {

@@ -15,6 +15,7 @@ import net.minecraft.block.Blocks;
 
 import net.mcreator.wildfarmcraft.item.PastureSeedItem;
 import net.mcreator.wildfarmcraft.block.PastureBlock;
+import net.mcreator.wildfarmcraft.block.FertilesoilBlock;
 import net.mcreator.wildfarmcraft.WildfarmcraftModElements;
 import net.mcreator.wildfarmcraft.WildfarmcraftMod;
 
@@ -59,9 +60,11 @@ public class PlantingPastureSeedProcedure extends WildfarmcraftModElements.ModEl
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 				.getItem() == new ItemStack(PastureSeedItem.block, (int) (1)).getItem())
-				&& (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.FARMLAND.getDefaultState().getBlock())
-						|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRASS_BLOCK.getDefaultState()
-								.getBlock())))
+				&& (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == FertilesoilBlock.block.getDefaultState().getBlock())
+						|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.FARMLAND.getDefaultState()
+								.getBlock())
+								|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRASS_BLOCK.getDefaultState()
+										.getBlock()))))
 				&& ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock()))) {
 			world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), PastureBlock.block.getDefaultState(), 3);
 			if ((!(new Object() {

@@ -4883,23 +4883,6 @@
       }
     },
     {
-      "name": "InitialEntityTagsRabbitsAndLlamas",
-      "type": "procedure",
-      "sortid": 276,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "initial_entity_tags_rabbits_and_llamas",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "IsAngryCondition",
       "type": "procedure",
       "sortid": 278,
@@ -5577,7 +5560,7 @@
       "type": "loottable",
       "sortid": 321,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "ids": {},
       "registry_name": "apple_leaves_loot"
     },
@@ -7665,6 +7648,1109 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "forge_fruits"
+    },
+    {
+      "name": "IbexBaby",
+      "type": "mob",
+      "sortid": 442,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ibex_baby"
+    },
+    {
+      "name": "IbexFemale",
+      "type": "mob",
+      "sortid": 443,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ibex_female"
+    },
+    {
+      "name": "IbexMale",
+      "type": "mob",
+      "sortid": 444,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ibex_male"
+    },
+    {
+      "name": "IbexBabyGrowth",
+      "type": "procedure",
+      "sortid": 445,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ibex_baby_growth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IbexFemaleTickUpdate",
+      "type": "procedure",
+      "sortid": 446,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ibex_female_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IbexMaleTickUpdate",
+      "type": "procedure",
+      "sortid": 447,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ibex_male_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoatSetPartner",
+      "type": "procedure",
+      "sortid": 448,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goat_set_partner",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoatBirth",
+      "type": "procedure",
+      "sortid": 449,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goat_birth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InitialTagGoats",
+      "type": "procedure",
+      "sortid": 450,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "initial_tag_goats",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SaanenGoatBaby",
+      "type": "mob",
+      "sortid": 452,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "saanen_goat_baby"
+    },
+    {
+      "name": "SaanenGoatFemale",
+      "type": "mob",
+      "sortid": 453,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "saanen_goat_female"
+    },
+    {
+      "name": "SaanenGoatMale",
+      "type": "mob",
+      "sortid": 454,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "saanen_goat_male"
+    },
+    {
+      "name": "SaanenGoatBabyGrowth",
+      "type": "procedure",
+      "sortid": 455,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "saanen_goat_baby_growth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SaanenGoatFemaleTickUpdate",
+      "type": "procedure",
+      "sortid": 456,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "saanen_goat_female_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SaanenGoatMaleTickUpdate",
+      "type": "procedure",
+      "sortid": 457,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "saanen_goat_male_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RedNubianGoatBaby",
+      "type": "mob",
+      "sortid": 458,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_nubian_goat_baby"
+    },
+    {
+      "name": "RedNubianGoatFemale",
+      "type": "mob",
+      "sortid": 459,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_nubian_goat_female"
+    },
+    {
+      "name": "RedNubianGoatMale",
+      "type": "mob",
+      "sortid": 460,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_nubian_goat_male"
+    },
+    {
+      "name": "RedNubianGoatBabyGrowth",
+      "type": "procedure",
+      "sortid": 461,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_nubian_goat_baby_growth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RedNubianGoatFemaleTickUpdate",
+      "type": "procedure",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_nubian_goat_female_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RedNubianGoatMaleTickUpdate",
+      "type": "procedure",
+      "sortid": 463,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_nubian_goat_male_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoatBabyIsHurt",
+      "type": "procedure",
+      "sortid": 464,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goat_baby_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GoatMilk",
+      "type": "food",
+      "sortid": 465,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "goat_milk"
+    },
+    {
+      "name": "IbexSpawnCondi",
+      "type": "procedure",
+      "sortid": 466,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ibex_spawn_condi",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GuanacoBaby",
+      "type": "mob",
+      "sortid": 467,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guanaco_baby"
+    },
+    {
+      "name": "GuanacoFemale",
+      "type": "mob",
+      "sortid": 468,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guanaco_female"
+    },
+    {
+      "name": "GuanacoMale",
+      "type": "mob",
+      "sortid": 469,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guanaco_male"
+    },
+    {
+      "name": "LlamaBirth",
+      "type": "procedure",
+      "sortid": 471,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "llama_birth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GuanacoBabyGrowth",
+      "type": "procedure",
+      "sortid": 472,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guanaco_baby_growth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GuanacoFemaleTickUpdate",
+      "type": "procedure",
+      "sortid": 473,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guanaco_female_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GuanacoMaleTickUpdate",
+      "type": "procedure",
+      "sortid": 474,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guanaco_male_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LlamaSetPartner",
+      "type": "procedure",
+      "sortid": 475,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "llama_set_partner",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WhiteLlamaBaby",
+      "type": "mob",
+      "sortid": 476,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "white_llama_baby"
+    },
+    {
+      "name": "WhiteLlamaFemale",
+      "type": "mob",
+      "sortid": 477,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "white_llama_female"
+    },
+    {
+      "name": "WhiteLlamaBabyGrowth",
+      "type": "procedure",
+      "sortid": 478,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "white_llama_baby_growth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WhiteLlamaMale",
+      "type": "mob",
+      "sortid": 479,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "white_llama_male"
+    },
+    {
+      "name": "WhiteLlamaFemaleTickUpdate",
+      "type": "procedure",
+      "sortid": 480,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "white_llama_female_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WhiteLlamaMaleTickUpdate",
+      "type": "procedure",
+      "sortid": 481,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "white_llama_male_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InitialTagsRabbits",
+      "type": "procedure",
+      "sortid": 482,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "initial_tags_rabbits",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "InitialTagLlamas",
+      "type": "procedure",
+      "sortid": 483,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "initial_tag_llamas",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LlamaBabyIsHurt",
+      "type": "procedure",
+      "sortid": 484,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "llama_baby_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RawLlamaMeat",
+      "type": "food",
+      "sortid": 485,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raw_llama_meat"
+    },
+    {
+      "name": "CookedLlamaMeat",
+      "type": "food",
+      "sortid": 486,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooked_llama_meat"
+    },
+    {
+      "name": "LlamaMeatCooking",
+      "type": "recipe",
+      "sortid": 487,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "llama_meat_cooking"
+    },
+    {
+      "name": "CookingLlamaCampfire",
+      "type": "recipe",
+      "sortid": 488,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cooking_llama_campfire"
+    },
+    {
+      "name": "SmokingLlamaMeat",
+      "type": "recipe",
+      "sortid": 489,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoking_llama_meat"
+    },
+    {
+      "name": "Llamaspit",
+      "type": "gun",
+      "sortid": 490,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "llamaspit"
+    },
+    {
+      "name": "LlamaspitWhileBulletFlyingTick",
+      "type": "procedure",
+      "sortid": 491,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "llamaspit_while_bullet_flying_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LlamaSpitTickUpdate",
+      "type": "procedure",
+      "sortid": 492,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "llama_spit_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GuanacoSpawnCondi",
+      "type": "procedure",
+      "sortid": 493,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "guanaco_spawn_condi",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FertileSoilMeal",
+      "type": "procedure",
+      "sortid": 494,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fertile_soil_meal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fertilesoil",
+      "type": "block",
+      "sortid": 494,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fertilesoil"
+    },
+    {
+      "name": "FertileSoilRecipe",
+      "type": "recipe",
+      "sortid": 495,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fertile_soil_recipe"
     }
   ],
   "variable_elements": [],
@@ -7764,15 +8850,55 @@
       ],
       "category": "master",
       "subtitle": ""
+    },
+    {
+      "name": "deer",
+      "files": [
+        "deer"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "deerdeath",
+      "files": [
+        "deerdeath"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "goatdeath",
+      "files": [
+        "goatdeath"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "goat",
+      "files": [
+        "goat"
+      ],
+      "category": "master",
+      "subtitle": ""
+    },
+    {
+      "name": "goathurt",
+      "files": [
+        "goathurt"
+      ],
+      "category": "master",
+      "subtitle": ""
     }
   ],
   "language_map": {
     "en_us": {
       "item.wildfarmcraft.bison_cow_spawn_egg": "Bison Female Spawn Egg",
-      "item.wildfarmcraft.holstein_calf_spawn_egg": "Holstein Calf Spawn Egg",
       "item.wildfarmcraft.aurochs_bull_spawn_egg": "Aurochs Bull Spawn Egg",
-      "block.wildfarmcraft.breaking": "Breaking",
+      "item.wildfarmcraft.holstein_calf_spawn_egg": "Holstein Calf Spawn Egg",
       "item.wildfarmcraft.bag_med_herbivore_food": "Medium Herbivore Food Bag",
+      "block.wildfarmcraft.breaking": "Breaking",
       "entity.wildfarmcraft.iberian_bull": "Iberian Bull",
       "item.wildfarmcraft.domestic_turkey_chick_spawn_egg": "Domestic Turkey Chick Spawn Egg",
       "item.wildfarmcraft.nelore_bull_spawn_egg": "Nelore Bull Spawn Egg",
@@ -7780,9 +8906,11 @@
       "entity.wildfarmcraft.dutch_rabbit_baby": "Dutch Rabbit Baby",
       "item.wildfarmcraft.junglefowl_chick_spawn_egg": "Junglefowl Chick Spawn Egg",
       "block.wildfarmcraft.straw_hay_stairs": "Straw Hay Stairs",
+      "item.wildfarmcraft.cooked_llama_meat": "Cooked Llama Meat",
       "entity.wildfarmcraft.pekin_duck_female": "Pekin Duck Female",
       "item.wildfarmcraft.raw_turkey": "Raw Turkey",
       "item.wildfarmcraft.pasture_seed": "Pasture planting",
+      "entity.wildfarmcraft.saanen_goat_male": "Saanen Goat Male",
       "item.wildfarmcraft.nelore_cow_spawn_egg": "Nelore Cow Spawn Egg",
       "item.wildfarmcraft.strawberry_item": "Strawberries",
       "item.wildfarmcraft.turkey_nest_spawn_egg": "Turkey Nest Spawn Egg",
@@ -7797,10 +8925,12 @@
       "entity.wildfarmcraft.highlands_bull": "Highlands Bull",
       "block.wildfarmcraft.apple_stage_3": "Apple Stage 2",
       "item.wildfarmcraft.red_rhode_chick_spawn_egg": "Red Rhode Chick Spawn Egg",
+      "item.wildfarmcraft.ibex_male_spawn_egg": "Ibex Male Spawn Egg",
       "block.wildfarmcraft.apple_stage_1": "Apple Stage 1",
       "item.wildfarmcraft.wild_turkey_baby_spawn_egg": "Wild Turkey Baby Spawn Egg",
       "block.wildfarmcraft.apple_stage_2": "Apple Stage 2",
       "subtitles.ducknormal": "duck",
+      "entity.wildfarmcraft.white_llama_baby": "White Llama Baby",
       "item.wildfarmcraft.wool_tuft": "Fur Tuft",
       "item.wildfarmcraft.brown_duck_male_spawn_egg": "Brown Duck Male Spawn Egg",
       "item.wildfarmcraft.dutch_rabbit_baby_spawn_egg": "Dutch Rabbit Baby Spawn Egg",
@@ -7815,24 +8945,28 @@
       "entity.wildfarmcraft.domestic_turkey_female": "Domestic Turkey Female",
       "item.wildfarmcraft.blowinghorn": "Blowing Horn",
       "entity.wildfarmcraft.red_rhode_rooster": "Red Rhode Rooster",
-      "entity.wildfarmcraft.boar_male": "Boar Male",
       "item.wildfarmcraft.raw_venison": "Raw Venison",
+      "entity.wildfarmcraft.boar_male": "Boar Male",
       "item.wildfarmcraft.gir_calf_spawn_egg": "Gir Calf Spawn Egg",
       "item.wildfarmcraft.iberian_cow_spawn_egg": "Iberian Cow Spawn Egg",
       "item.wildfarmcraft.hampshire_lamb_spawn_egg": "Hampshire Lamb Spawn Egg",
       "entity.wildfarmcraft.wild_turkey_baby": "Wild Turkey Baby",
-      "entity.wildfarmcraft.junglefowl_male": "Junglfowl Male",
+      "entity.wildfarmcraft.junglefowl_male": "Junglefowl Male",
       "subtitles.bison": "",
       "entity.wildfarmcraft.junglefowl_chick": "Junglefowl Chick",
       "item.wildfarmcraft.wild_rabbit_female_spawn_egg": "Wild Rabbit Female Spawn Egg",
       "entity.wildfarmcraft.red_rhode_chick": "Red Rhode Chick",
       "item.wildfarmcraft.brown_duckling_spawn_egg": "Brown Duckling Spawn Egg",
+      "entity.wildfarmcraft.white_llama_male": "White Llama Male",
+      "item.wildfarmcraft.red_nubian_goat_male_spawn_egg": "Red Nubian Goat Male Spawn Egg",
       "entity.wildfarmcraft.black_ewe": "Black Ewe",
       "subtitles.ducklingambient": "ducklingambient",
+      "item.wildfarmcraft.raw_llama_meat": "Raw Llama Meat",
       "item.wildfarmcraft.wild_rabbit_male_spawn_egg": "Wild Rabbit Male Spawn Egg",
       "item.wildfarmcraft.red_rhode_hen_spawn_egg": "Red Rhode Hen Spawn Egg",
       "entity.wildfarmcraft.highlands_calf": "Highlands Calf",
-      "item.wildfarmcraft.brown_duck_female_spawn_egg": "Browb Duck Female Spawn Egg",
+      "item.wildfarmcraft.brown_duck_female_spawn_egg": "Brown Duck Female Spawn Egg",
+      "item.wildfarmcraft.saanen_goat_baby_spawn_egg": "Saanen Goat Baby Spawn Egg",
       "item.wildfarmcraft.black_ram_spawn_egg": "Black Ram Spawn Egg",
       "entity.wildfarmcraft.leghorn_rooster": "Leghorn Rooster",
       "item.wildfarmcraft.egg_in_a_bowl": "Egg In a Bowl",
@@ -7841,10 +8975,12 @@
       "item.wildfarmcraft.turkey_egg": "Turkey egg",
       "item.wildfarmcraft.wild_duck_female_spawn_egg": "Wild Duck Female Spawn Egg",
       "item.wildfarmcraft.highlands_calf_spawn_egg": "Highlands Calf Spawn Egg",
+      "entity.wildfarmcraft.ibex_female": "Ibex Female",
       "item.wildfarmcraft.duck_nest_spawn_egg": "Duck Nest Spawn Egg",
       "item.wildfarmcraft.cooked_egg": "Cooked Egg",
       "item.wildfarmcraft.growingwand": "Growing Wand",
       "entity.wildfarmcraft.wild_duckling": "Wild Duckling",
+      "item.wildfarmcraft.red_nubian_goat_baby_spawn_egg": "Red Nubian Goat Baby Spawn Egg",
       "entity.wildfarmcraft.merino_ewe": "Merino Ewe",
       "entity.wildfarmcraft.pekin_duck_male": "Pekin Duck Male",
       "gamerule.wfcPregnancyTime": "Wildfarmcraft Pregnancy Time",
@@ -7861,8 +8997,10 @@
       "item.wildfarmcraft.gir_bull_spawn_egg": "Gir Bull Spawn Egg",
       "entity.wildfarmcraft.black_lamb": "Black Lamb",
       "item.wildfarmcraft.flour": "Flour",
+      "entity.wildfarmcraft.red_nubian_goat_female": "Red Nubian Goat Female",
       "block.wildfarmcraft.pasture_grownO": "Pasture",
       "entity.wildfarmcraft.mouflon_ewe": "Mouflon Ewe",
+      "item.wildfarmcraft.red_nubian_goat_female_spawn_egg": "Red Nubian Goat Female Spawn Egg",
       "entity.wildfarmcraft.bison_bull": "Bison Male",
       "item.wildfarmcraft.fruit_yogurt": "Fruit Yogurt",
       "item.wildfarmcraft.bag_big_herbivore_foods": "Big Herbivore Food Bag",
@@ -7874,7 +9012,9 @@
       "item.wildfarmcraft.dutch_rabbit_female_spawn_egg": "Dutch Rabbit Female Spawn Egg",
       "item.wildfarmcraft.cooked_duck": "Cooked Duck",
       "gamerule.doWFCReplaceVanilla": "doWFCReplaceVanilla",
+      "entity.wildfarmcraft.guanaco_female": "Guanaco Female",
       "block.wildfarmcraft.strawberry_bush_3": "Strawberry Bush 2",
+      "item.wildfarmcraft.ibex_female_spawn_egg": "Ibex Female Spawn Egg",
       "block.wildfarmcraft.strawberry_bush_2": "Strawberry Bush 2",
       "entity.wildfarmcraft.aurochs_bull": "Aurochs Bull",
       "block.wildfarmcraft.strawberry_bush_1": "Strawberry Bush 1",
@@ -7882,11 +9022,14 @@
       "entity.wildfarmcraft.boar_sow": "Boar Female",
       "entity.wildfarmcraft.deer_baby": "Deer Baby",
       "item.wildfarmcraft.cooked_venison": "Cooked Venison",
+      "entity.wildfarmcraft.ibex_baby": "Ibex Baby",
       "entity.wildfarmcraft.hampshire_ram": "Hampshire Ram",
       "entity.wildfarmcraft.mouflon_ram": "Mouflon Ram",
       "entity.wildfarmcraft.iberian_calf": "Iberian Calf",
       "entity.wildfarmcraft.junglefowl_female": "Junglefowl Female",
+      "entity.wildfarmcraft.red_nubian_goat_baby": "Red Nubian Goat Baby",
       "entity.wildfarmcraft.simmental_bull": "Simmental Bull",
+      "item.wildfarmcraft.llamaspit": "Llamaspit",
       "item.wildfarmcraft.merino_ram_spawn_egg": "Merino Ram Spawn Egg",
       "gamerule.wfcAnimalProductionTime.description": "The time the animal takes for producing things, can be multiplied depending on specie",
       "item.wildfarmcraft.boar_piglet_spawn_egg": "Boar Piglet Spawn Egg",
@@ -7904,9 +9047,12 @@
       "item.wildfarmcraft.gir_cow_spawn_egg": "Gir Cow Spawn Egg",
       "item.wildfarmcraft.highlands_cow_spawn_egg": "Highlands Cow Spawn Egg",
       "entity.wildfarmcraft.spotted_sow": "Old Spots Sow",
+      "item.wildfarmcraft.saanen_goat_female_spawn_egg": "Saanen Goat Female Spawn Egg",
+      "item.wildfarmcraft.ibex_baby_spawn_egg": "Ibex Baby Spawn Egg",
       "subtitles.duckhurt": "duckhurt",
       "item.wildfarmcraft.rabbit_stew_raw": "Raw Rabbit Stew",
       "itemGroup.tabwild_farm_craft_spawn_eggs": "Wild Farm Craft Spawn Eggs",
+      "subtitles.goathurt": "",
       "entity.wildfarmcraft.hampshire_ewe": "Hampshire Ewe",
       "item.wildfarmcraft.cattle_milk": "Cattle Milk",
       "item.wildfarmcraft.apple_seeds": "Apple Seeds",
@@ -7919,14 +9065,16 @@
       "entity.wildfarmcraft.nelore_calf": "Nelore Calf",
       "block.wildfarmcraft.strawberry_bush_grown": "Strawberry Bush 2",
       "entity.wildfarmcraft.brown_duckling": "Brown Duckling",
+      "entity.wildfarmcraft.ibex_male": "Ibex Male",
       "item.wildfarmcraft.beetroot_stew_raw": "Raw Beetroot Soup",
       "subtitles.turkeyhurt": "",
       "item.wildfarmcraft.wool_tuft_white": "White Fur Tuft",
-      "item.wildfarmcraft.junglefowl_male_spawn_egg": "Junglfowl Male Spawn Egg",
+      "item.wildfarmcraft.junglefowl_male_spawn_egg": "Junglefowl Male Spawn Egg",
       "gamerule.wfcPregnancyTime.description": "The time the animal takes for pregnancy",
       "item.wildfarmcraft.spotted_pig_male_spawn_egg": "Spotted Pig Male Spawn Egg",
       "item.wildfarmcraft.holstein_cow_spawn_egg": "Holstein Cow Spawn Egg",
       "entity.wildfarmcraft.highlands_cow": "Highlands Cow",
+      "subtitles.goatdeath": "",
       "item.wildfarmcraft.aurochs_calf_spawn_egg": "Aurochs Calf Spawn Egg",
       "subtitles.ducklinghurt": "ducklinghurt",
       "item.wildfarmcraft.highlands_bull_spawn_egg": "Highlands Bull Spawn Egg",
@@ -7936,6 +9084,7 @@
       "block.wildfarmcraft.pasture_grown": "Pasture",
       "entity.wildfarmcraft.pink_pig_male": "Domestic Pig Male",
       "item.wildfarmcraft.wild_duck_male_spawn_egg": "Wild Duck Male Spawn Egg",
+      "item.wildfarmcraft.saanen_goat_male_spawn_egg": "Saanen Goat Male Spawn Egg",
       "item.wildfarmcraft.simmental_calf_spawn_egg": "Simmental Calf Spawn Egg",
       "item.wildfarmcraft.mouflon_ewe_spawn_egg": "Mouflon Ewe Spawn Egg",
       "entity.wildfarmcraft.leghorn_hen": "Leghorn Hen",
@@ -7948,10 +9097,14 @@
       "block.wildfarmcraft.straw_hay_slab": "Straw Hay Slab",
       "item.wildfarmcraft.leghorn_chick_spawn_egg": "Leghorn Chick Spawn Egg",
       "item.wildfarmcraft.dutch_rabbit_male_spawn_egg": "Dutch Rabbit Male Spawn Egg",
+      "item.wildfarmcraft.guanaco_male_spawn_egg": "Guanaco Male Spawn Egg",
+      "item.wildfarmcraft.guanaco_female_spawn_egg": "Guanaco Female Spawn Egg",
       "item.wildfarmcraft.chicken_nest_spawn_egg": "Chicken Nest Spawn Egg",
       "item.wildfarmcraft.cheese_slice": "Cheese",
       "item.wildfarmcraft.deer_female_spawn_egg": "Deer Female Spawn Egg",
       "block.wildfarmcraft.apple_sapling": "Apple Sapling",
+      "entity.wildfarmcraft.guanaco_baby": "Guanaco Baby",
+      "item.wildfarmcraft.white_llama_female_spawn_egg": "White Llama Female Spawn Egg",
       "item.wildfarmcraft.wild_duckling_spawn_egg": "Wild Duckling Spawn Egg",
       "item.wildfarmcraft.mouflon_ram_spawn_egg": "Mouflon Ram Spawn Egg",
       "entity.wildfarmcraft.bison_calf": "Bison Baby",
@@ -7959,6 +9112,8 @@
       "item.wildfarmcraft.dough": "Dough",
       "entity.wildfarmcraft.wild_rabbit_female": "Wild Rabbit Female",
       "subtitles.rooster": "",
+      "item.wildfarmcraft.guanaco_baby_spawn_egg": "Guanaco Baby Spawn Egg",
+      "item.wildfarmcraft.white_llama_male_spawn_egg": "White Llama Male Spawn Egg",
       "item.wildfarmcraft.strawberry_yogurt": "Strawberry Yogurt",
       "entity.wildfarmcraft.holstein_calf": "Holstein Calf",
       "block.wildfarmcraft.apple_leaves": "Apple Leaves",
@@ -7967,11 +9122,16 @@
       "item.wildfarmcraft.raw_duck": "Raw Duck",
       "item.wildfarmcraft.leghorn_hen_spawn_egg": "Leghorn Hen Spawn Egg",
       "entity.wildfarmcraft.deer_male": "Deer Male",
+      "entity.wildfarmcraft.red_nubian_goat_male": "Red Nubian Goat Male",
       "item.wildfarmcraft.black_lamb_spawn_egg": "Black Lamb Spawn Egg",
       "item.wildfarmcraft.medium_omnivore_slop": "Medium omnivore Slop",
       "block.wildfarmcraft.straw_hay": "Straw Hay",
+      "subtitles.deer": "",
       "entity.wildfarmcraft.simmental_calf": "Simmental Calf",
+      "entity.wildfarmcraft.guanaco_male": "Guanaco Male",
       "item.wildfarmcraft.junglefowl_female_spawn_egg": "Junglefowl Female Spawn Egg",
+      "entity.wildfarmcraft.white_llama_female": "White Llama Female",
+      "block.wildfarmcraft.fertilesoil": "Fertilesoil",
       "item.wildfarmcraft.pink_pig_male_spawn_egg": "Domestic Pig Male Spawn Egg",
       "item.wildfarmcraft.boar_sow_spawn_egg": "Boar Female Spawn Egg",
       "item.wildfarmcraft.mouflon_lamb_spawn_egg": "Mouflon Lamb Spawn Egg",
@@ -7983,31 +9143,37 @@
       "entity.wildfarmcraft.pink_piglet": "Domestic Piglet",
       "subtitles.chickhurt": "",
       "block.wildfarmcraft.pasture": "Pasture",
+      "subtitles.deerdeath": "",
       "item.wildfarmcraft.simmental_cow_spawn_egg": "Simmental Cow Spawn Egg",
       "entity.wildfarmcraft.bison_cow": "Bison Female",
       "item.wildfarmcraft.mortar_and_pestle": "Mortar And Pestle",
+      "item.wildfarmcraft.goat_milk": "Goat Milk",
+      "item.wildfarmcraft.white_llama_baby_spawn_egg": "White Llama Baby Spawn Egg",
       "subtitles.duckamibent": "duck",
       "item.wildfarmcraft.duckegg": "Duck egg",
       "entity.wildfarmcraft.leghorn_chick": "Leghorn Chick",
       "item.wildfarmcraft.pink_sow_spawn_egg": "Domestic Pig Sow Spawn Egg",
       "item.wildfarmcraft.pekin_duck_female_spawn_egg": "Pekin Duck Female Spawn Egg",
+      "subtitles.goat": "",
       "entity.wildfarmcraft.dutch_rabbit_female": "Dutch Rabbit Female",
       "item.wildfarmcraft.pink_piglet_spawn_egg": "Domestic Piglet Spawn Egg",
       "entity.wildfarmcraft.domestic_turkey_male": "Domestic Turkey Male",
       "entity.wildfarmcraft.pink_sow": "Domestic Pig Sow",
       "entity.wildfarmcraft.duck_nest": "Duck Nest",
+      "entity.wildfarmcraft.saanen_goat_female": "Saanen Goat Female",
       "entity.wildfarmcraft.gir_bull": "Gir Bull",
       "item.wildfarmcraft.deer_baby_spawn_egg": "Deer Baby Spawn Egg",
       "item.wildfarmcraft.iberian_calf_spawn_egg": "Iberian Calf Spawn Egg",
       "entity.wildfarmcraft.boar_piglet": "Boar Piglet",
       "entity.wildfarmcraft.nelore_bull": "Nelore Bull",
       "subtitles.blowing_horn": "blowinghorn",
-      "entity.wildfarmcraft.brown_duck_female": "Browb Duck Female",
+      "entity.wildfarmcraft.brown_duck_female": "Brown Duck Female",
       "entity.wildfarmcraft.nelore_cow": "Nelore Cow",
       "item.wildfarmcraft.deer_male_spawn_egg": "Deer Male Spawn Egg",
       "item.wildfarmcraft.bucketofcuddles": "Bucket with curd",
       "item.wildfarmcraft.mushroom_stew_raw": "Raw Mushroom Stew",
       "entity.wildfarmcraft.dutch_rabbit_male": "Dutch Rabbit Male",
+      "entity.wildfarmcraft.saanen_goat_baby": "Saanen Goat Baby",
       "item.wildfarmcraft.spotted_piglet_spawn_egg": "Old Spots Piglet Spawn Egg",
       "item.wildfarmcraft.black_ewe_spawn_egg": "Black Ewe Spawn Egg"
     },
@@ -8024,9 +9190,11 @@
       "entity.wildfarmcraft.dutch_rabbit_baby": "Coelho Holandês Filhote",
       "block.wildfarmcraft.straw_hay_stairs": "Escadas de Feno de Palha",
       "item.wildfarmcraft.junglefowl_chick_spawn_egg": "Ovo Gerador de Pintinho-Banquiva",
+      "item.wildfarmcraft.cooked_llama_meat": "Cooked Venison",
       "entity.wildfarmcraft.pekin_duck_female": "Pata Pekin",
       "item.wildfarmcraft.raw_turkey": "Carne de Peru Crua",
       "item.wildfarmcraft.pasture_seed": "Pasto",
+      "entity.wildfarmcraft.saanen_goat_male": "Bode Saanen",
       "item.wildfarmcraft.nelore_cow_spawn_egg": "Ovo Gerador de Vaca Nelore",
       "item.wildfarmcraft.strawberry_item": "Morangos",
       "item.wildfarmcraft.turkey_nest_spawn_egg": "Ovo Gerador de Ninho de Peru",
@@ -8040,11 +9208,13 @@
       "block.wildfarmcraft.apple_blossom": "Folhas de Macieira Floridas",
       "entity.wildfarmcraft.highlands_bull": "Touro Highlands",
       "block.wildfarmcraft.apple_stage_3": "Maçã fase 3",
+      "item.wildfarmcraft.ibex_male_spawn_egg": "Ovo Gerador de Bode Ibex",
       "item.wildfarmcraft.red_rhode_chick_spawn_egg": "Ovo Gerador de Pintinho Red Rhode",
       "item.wildfarmcraft.wild_turkey_baby_spawn_egg": "Ovo Gerador de Peru Selvagem Filhote",
       "block.wildfarmcraft.apple_stage_1": "Maçã fase 1",
       "subtitles.ducknormal": "duck",
       "block.wildfarmcraft.apple_stage_2": "Maçã fase 2",
+      "entity.wildfarmcraft.white_llama_baby": "Filhote de Lhama Branca",
       "item.wildfarmcraft.wool_tuft": "Tufo de Pelo",
       "item.wildfarmcraft.brown_duck_male_spawn_egg": "Ovo Gerador de Pato Marrom",
       "item.wildfarmcraft.dutch_rabbit_baby_spawn_egg": "Ovo Gerador de Coelho Holandês filhote",
@@ -8068,12 +9238,16 @@
       "item.wildfarmcraft.wild_rabbit_female_spawn_egg": "Ovo Gerador de Coelha Selvagem",
       "entity.wildfarmcraft.red_rhode_chick": "Pintinho Red Rhode",
       "item.wildfarmcraft.brown_duckling_spawn_egg": "Ovo Gerador de Patinho Marrom",
+      "entity.wildfarmcraft.white_llama_male": "Lhama Branca Macho",
+      "item.wildfarmcraft.red_nubian_goat_male_spawn_egg": "Ovo Gerador de Bode Núbio Vermelho",
       "entity.wildfarmcraft.black_ewe": "Ovelha Preta",
       "subtitles.ducklingambient": "ducklingambient",
+      "item.wildfarmcraft.raw_llama_meat": "Raw Venison",
       "item.wildfarmcraft.wild_rabbit_male_spawn_egg": "Ovo Gerador de Coelho Selvagem",
       "item.wildfarmcraft.red_rhode_hen_spawn_egg": "Ovo Gerador de Galinha Red Rhode",
       "entity.wildfarmcraft.highlands_calf": "Bezerro Highlands",
       "item.wildfarmcraft.brown_duck_female_spawn_egg": "Ovo Gerador de Pata Marrom",
+      "item.wildfarmcraft.saanen_goat_baby_spawn_egg": "Ovo Gerador de Cabrito Saanen",
       "item.wildfarmcraft.black_ram_spawn_egg": "Ovo Gerador de Carneiro Preto",
       "entity.wildfarmcraft.leghorn_rooster": "Galo Leghorn",
       "item.wildfarmcraft.egg_in_a_bowl": "Ovo em tigela",
@@ -8082,10 +9256,12 @@
       "item.wildfarmcraft.turkey_egg": "Ovo de Peru",
       "item.wildfarmcraft.wild_duck_female_spawn_egg": "Ovo Gerador de Pata Selvagem",
       "item.wildfarmcraft.highlands_calf_spawn_egg": "Ovo Gerador de Bezerro Highlands",
+      "entity.wildfarmcraft.ibex_female": "Cabra Ibex",
       "item.wildfarmcraft.duck_nest_spawn_egg": "Ovo Gerador de Ninho de Pato",
       "item.wildfarmcraft.cooked_egg": "Ovo Cozido",
       "item.wildfarmcraft.growingwand": "Growing Wand",
       "entity.wildfarmcraft.wild_duckling": "Patinho Selvagem",
+      "item.wildfarmcraft.red_nubian_goat_baby_spawn_egg": "Ovo Gerador de Cabrito Núbio Vermelho",
       "entity.wildfarmcraft.merino_ewe": "Ovelha Merino",
       "entity.wildfarmcraft.pekin_duck_male": "Pato Pekin",
       "gamerule.wfcPregnancyTime": "Wildfarmcraft Pregnancy Time",
@@ -8102,7 +9278,9 @@
       "item.wildfarmcraft.gir_bull_spawn_egg": "Ovo Gerador de Touro Gir",
       "entity.wildfarmcraft.black_lamb": "Cordeiro Preto",
       "item.wildfarmcraft.flour": "Farinha",
+      "entity.wildfarmcraft.red_nubian_goat_female": "Cabra Núbia Vermelha",
       "entity.wildfarmcraft.mouflon_ewe": "Muflão Fêmea",
+      "item.wildfarmcraft.red_nubian_goat_female_spawn_egg": "Ovo Gerador de Cabra Núbia Vermelha",
       "entity.wildfarmcraft.bison_bull": "Bisão Macho",
       "item.wildfarmcraft.fruit_yogurt": "Iogurte de Frutas",
       "item.wildfarmcraft.bag_big_herbivore_foods": "Pacote de Ração para Herbívoros Grandes",
@@ -8114,7 +9292,9 @@
       "item.wildfarmcraft.dutch_rabbit_female_spawn_egg": "Ovo Gerador de Coelha Holandesa",
       "item.wildfarmcraft.cooked_duck": "Pato Assado",
       "gamerule.doWFCReplaceVanilla": "doWFCReplaceVanilla",
+      "entity.wildfarmcraft.guanaco_female": "Guanaco Fêmea",
       "block.wildfarmcraft.strawberry_bush_3": "Arbusto de Morangos 3",
+      "item.wildfarmcraft.ibex_female_spawn_egg": "Ovo Gerador de Cabra Ibex",
       "block.wildfarmcraft.strawberry_bush_2": "Arbusto de Morangos 2",
       "entity.wildfarmcraft.aurochs_bull": "Touro Auroque",
       "block.wildfarmcraft.strawberry_bush_1": "Arbusto de Morangos 1",
@@ -8122,11 +9302,14 @@
       "entity.wildfarmcraft.boar_sow": "Javali Fêmea",
       "entity.wildfarmcraft.deer_baby": "Cervo Filhote",
       "item.wildfarmcraft.cooked_venison": "Carne de Cervo Assada",
+      "entity.wildfarmcraft.ibex_baby": "Cabrito Ibex",
       "entity.wildfarmcraft.hampshire_ram": "Carneiro Hampshire",
       "entity.wildfarmcraft.mouflon_ram": "Muflão Macho",
       "entity.wildfarmcraft.iberian_calf": "Bezerro Ibérico",
       "entity.wildfarmcraft.junglefowl_female": "Galinha-Banquiva",
+      "entity.wildfarmcraft.red_nubian_goat_baby": "Cabrito Núbio Vermelho",
       "entity.wildfarmcraft.simmental_bull": "Touro Simmental",
+      "item.wildfarmcraft.llamaspit": "Llamaspit",
       "item.wildfarmcraft.merino_ram_spawn_egg": "Ovo Gerador de Carneiro Merino",
       "gamerule.wfcAnimalProductionTime.description": "tempo que o animal leva pra produzir coisas, pode ser multiplicado dependendo da espécie",
       "item.wildfarmcraft.boar_piglet_spawn_egg": "Ovo Gerador de Javali Filhote",
@@ -8143,9 +9326,12 @@
       "item.wildfarmcraft.gir_cow_spawn_egg": "Ovo Gerador de Vaca Gir",
       "item.wildfarmcraft.highlands_cow_spawn_egg": "Ovo Gerador de Vaca Highlands",
       "entity.wildfarmcraft.spotted_sow": "Porca Old Spots",
+      "item.wildfarmcraft.saanen_goat_female_spawn_egg": "Ovo Gerador de Cabra Saanen",
+      "item.wildfarmcraft.ibex_baby_spawn_egg": "Ovo Gerador de Cabrito Ibex",
       "subtitles.duckhurt": "duckhurt",
       "item.wildfarmcraft.rabbit_stew_raw": "Sopa de Coelho Crua",
       "itemGroup.tabwild_farm_craft_spawn_eggs": "Ovos de Spawn do WildFarmCraft",
+      "subtitles.goathurt": "",
       "entity.wildfarmcraft.hampshire_ewe": "Ovelha Hampshire",
       "item.wildfarmcraft.cattle_milk": "Leite de gado",
       "item.wildfarmcraft.apple_seeds": "Semente de Maçã",
@@ -8158,6 +9344,7 @@
       "entity.wildfarmcraft.nelore_calf": "Bezerro Nelore",
       "block.wildfarmcraft.strawberry_bush_grown": "Arbusto de Morangos Crescido",
       "entity.wildfarmcraft.brown_duckling": "Patinho Marrom",
+      "entity.wildfarmcraft.ibex_male": "Bode Ibex",
       "item.wildfarmcraft.beetroot_stew_raw": "Sopa de Beterraba Crua",
       "item.wildfarmcraft.wool_tuft_white": "Tufo de Pelo Branco",
       "item.wildfarmcraft.junglefowl_male_spawn_egg": "Ovo Gerador de Galo-Banquiva",
@@ -8165,6 +9352,7 @@
       "item.wildfarmcraft.spotted_pig_male_spawn_egg": "Ovo Gerador de Porco Old Spots Macho",
       "item.wildfarmcraft.holstein_cow_spawn_egg": "Ovo Gerador de Vaca Holstein",
       "entity.wildfarmcraft.highlands_cow": "Vaca Highlands",
+      "subtitles.goatdeath": "",
       "item.wildfarmcraft.aurochs_calf_spawn_egg": "Ovo Gerador de Bezerro Auroque",
       "subtitles.ducklinghurt": "ducklinghurt",
       "item.wildfarmcraft.highlands_bull_spawn_egg": "Ovo Gerador de Touro Highlands",
@@ -8174,6 +9362,7 @@
       "block.wildfarmcraft.pasture_grown": "Pasto Crescido",
       "entity.wildfarmcraft.pink_pig_male": "Porco Doméstico Macho",
       "item.wildfarmcraft.wild_duck_male_spawn_egg": "Ovo Gerador de Pato Selvagem",
+      "item.wildfarmcraft.saanen_goat_male_spawn_egg": "Ovo Gerador de Bode Saanen",
       "item.wildfarmcraft.simmental_calf_spawn_egg": "Ovo Gerador de Bezerro Simmental",
       "item.wildfarmcraft.mouflon_ewe_spawn_egg": "Ovo Gerador de Muflão fêmea",
       "entity.wildfarmcraft.leghorn_hen": "Galinha Leghorn",
@@ -8186,16 +9375,22 @@
       "block.wildfarmcraft.straw_hay_slab": "Laje de Feno de Palha",
       "item.wildfarmcraft.leghorn_chick_spawn_egg": "Ovo Gerador de Pintinho Leghorn",
       "item.wildfarmcraft.dutch_rabbit_male_spawn_egg": "Ovo Gerador de Coelho Holandês",
+      "item.wildfarmcraft.guanaco_male_spawn_egg": "Ovo Gerador de Guanaco Macho",
+      "item.wildfarmcraft.guanaco_female_spawn_egg": "Ovo Gerador de Guanaco Fêmea",
       "item.wildfarmcraft.chicken_nest_spawn_egg": "Ovo Gerador de Ninho de galinha",
       "item.wildfarmcraft.cheese_slice": "Queijo",
       "item.wildfarmcraft.deer_female_spawn_egg": "Ovo Gerador de Cervo Fêmea",
       "block.wildfarmcraft.apple_sapling": "Muda de Macieira",
+      "entity.wildfarmcraft.guanaco_baby": "Guanaco Filhote",
+      "item.wildfarmcraft.white_llama_female_spawn_egg": "Ovo Gerador de Lhama Branca Fêmea",
       "item.wildfarmcraft.wild_duckling_spawn_egg": "Ovo Gerador de Patinho Selvagem",
       "item.wildfarmcraft.mouflon_ram_spawn_egg": "Ovo Gerador de Muflão macho",
       "entity.wildfarmcraft.bison_calf": "Bisão Filhote",
       "entity.wildfarmcraft.simmental_cow": "Vaca Simmental",
       "item.wildfarmcraft.dough": "Massa",
       "entity.wildfarmcraft.wild_rabbit_female": "Coelha Selvagem",
+      "item.wildfarmcraft.guanaco_baby_spawn_egg": "Ovo Gerador de Guanaco Filhote",
+      "item.wildfarmcraft.white_llama_male_spawn_egg": "Ovo Gerador de Lhama Branca Macho",
       "item.wildfarmcraft.strawberry_yogurt": "Iogurte de Morango",
       "entity.wildfarmcraft.holstein_calf": "Bezerro Holstein",
       "block.wildfarmcraft.apple_leaves": "Folhas de Macieira",
@@ -8204,11 +9399,16 @@
       "item.wildfarmcraft.raw_duck": "Carne de Pato Crua",
       "item.wildfarmcraft.leghorn_hen_spawn_egg": "Ovo Gerador de Galinha Leghorn",
       "entity.wildfarmcraft.deer_male": "Cervo Macho",
+      "entity.wildfarmcraft.red_nubian_goat_male": "Bode Núbio Vermelho",
       "item.wildfarmcraft.black_lamb_spawn_egg": "Ovo Gerador de Cordeiro Preto",
       "item.wildfarmcraft.medium_omnivore_slop": "Lavagem para Omnívoros Médios",
       "block.wildfarmcraft.straw_hay": "Feno de Palha",
+      "subtitles.deer": "",
       "entity.wildfarmcraft.simmental_calf": "Bezerro Simmental",
+      "entity.wildfarmcraft.guanaco_male": "Guanaco Macho",
       "item.wildfarmcraft.junglefowl_female_spawn_egg": "Ovo Gerador de Galinha-Banquiva",
+      "entity.wildfarmcraft.white_llama_female": "Lhama Branca Fêmea",
+      "block.wildfarmcraft.fertilesoil": "Fertilesoil",
       "item.wildfarmcraft.pink_pig_male_spawn_egg": "Ovo Gerador de Porco Doméstico Macho",
       "item.wildfarmcraft.boar_sow_spawn_egg": "Ovo Gerador de Javali Fêmea",
       "item.wildfarmcraft.mouflon_lamb_spawn_egg": "Ovo Gerador de Muflão filhote",
@@ -8219,19 +9419,24 @@
       "itemGroup.tabwfc_stuff": "Coisas do WildFarmCraft",
       "entity.wildfarmcraft.pink_piglet": "Porquinho Doméstico",
       "block.wildfarmcraft.pasture": "Pasto",
+      "subtitles.deerdeath": "",
       "item.wildfarmcraft.simmental_cow_spawn_egg": "Ovo Gerador de Vaca Simmental",
       "entity.wildfarmcraft.bison_cow": "Bisão Fêmea",
       "item.wildfarmcraft.mortar_and_pestle": "Pilão de Madeira",
+      "item.wildfarmcraft.goat_milk": "Cattle Milk",
+      "item.wildfarmcraft.white_llama_baby_spawn_egg": "Ovo Gerador de Filhote de Lhama Branca",
       "subtitles.duckamibent": "duck",
       "item.wildfarmcraft.duckegg": "Ovo de Pato",
       "entity.wildfarmcraft.leghorn_chick": "Pintinho Leghorn",
       "item.wildfarmcraft.pink_sow_spawn_egg": "Ovo Gerador de Porca Doméstica",
       "item.wildfarmcraft.pekin_duck_female_spawn_egg": "Ovo Gerador de Pata Pekin",
+      "subtitles.goat": "",
       "entity.wildfarmcraft.dutch_rabbit_female": "Coelha Holandesa",
       "item.wildfarmcraft.pink_piglet_spawn_egg": "Ovo Gerador de Porquinho Doméstico",
       "entity.wildfarmcraft.domestic_turkey_male": "Peru Doméstico Macho",
       "entity.wildfarmcraft.pink_sow": "Porca Doméstica",
       "entity.wildfarmcraft.duck_nest": "Ninho de Pato",
+      "entity.wildfarmcraft.saanen_goat_female": "Cabra Saanen",
       "entity.wildfarmcraft.gir_bull": "Touro Gir",
       "item.wildfarmcraft.deer_baby_spawn_egg": "Ovo Gerador de Cervo Filhote",
       "item.wildfarmcraft.iberian_calf_spawn_egg": "Ovo Gerador de Bezerro Ibérico",
@@ -8243,6 +9448,7 @@
       "item.wildfarmcraft.bucketofcuddles": "Balde de Coalhada",
       "item.wildfarmcraft.mushroom_stew_raw": "Sopa de Cogumelo Crua",
       "entity.wildfarmcraft.dutch_rabbit_male": "Coelho Holandês",
+      "entity.wildfarmcraft.saanen_goat_baby": "Cabrito Saanen",
       "item.wildfarmcraft.spotted_piglet_spawn_egg": "Ovo Gerador de Porquinho Old Spots",
       "item.wildfarmcraft.black_ewe_spawn_egg": "Ovo Gerador de Ovelha Preta"
     }

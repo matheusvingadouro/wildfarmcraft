@@ -249,6 +249,51 @@
       },
       {
         "value": "CUSTOM:BrownDuckMale"
+      },
+      {
+        "value": "CUSTOM:IbexBaby"
+      },
+      {
+        "value": "CUSTOM:IbexFemale"
+      },
+      {
+        "value": "CUSTOM:IbexMale"
+      },
+      {
+        "value": "CUSTOM:SaanenGoatBaby"
+      },
+      {
+        "value": "CUSTOM:SaanenGoatFemale"
+      },
+      {
+        "value": "CUSTOM:SaanenGoatMale"
+      },
+      {
+        "value": "CUSTOM:RedNubianGoatBaby"
+      },
+      {
+        "value": "CUSTOM:RedNubianGoatFemale"
+      },
+      {
+        "value": "CUSTOM:RedNubianGoatMale"
+      },
+      {
+        "value": "CUSTOM:GuanacoBaby"
+      },
+      {
+        "value": "CUSTOM:GuanacoFemale"
+      },
+      {
+        "value": "CUSTOM:GuanacoMale"
+      },
+      {
+        "value": "CUSTOM:WhiteLlamaBaby"
+      },
+      {
+        "value": "CUSTOM:WhiteLlamaFemale"
+      },
+      {
+        "value": "CUSTOM:WhiteLlamaMale"
       }
     ],
     "name": "wfc_entities",

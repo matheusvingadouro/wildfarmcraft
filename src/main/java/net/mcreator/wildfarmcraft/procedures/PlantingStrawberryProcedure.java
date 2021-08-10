@@ -19,6 +19,7 @@ import net.minecraft.block.Blocks;
 
 import net.mcreator.wildfarmcraft.item.StrawberryItemItem;
 import net.mcreator.wildfarmcraft.block.StrawberryBush1Block;
+import net.mcreator.wildfarmcraft.block.FertilesoilBlock;
 import net.mcreator.wildfarmcraft.WildfarmcraftModElements;
 import net.mcreator.wildfarmcraft.WildfarmcraftMod;
 
@@ -65,9 +66,11 @@ public class PlantingStrawberryProcedure extends WildfarmcraftModElements.ModEle
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 				.getItem() == new ItemStack(StrawberryItemItem.block, (int) (1)).getItem())
-				&& (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.FARMLAND.getDefaultState().getBlock())
-						|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRASS_BLOCK.getDefaultState()
-								.getBlock())))
+				&& (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == FertilesoilBlock.block.getDefaultState().getBlock())
+						|| (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.FARMLAND.getDefaultState()
+								.getBlock())
+								|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.GRASS_BLOCK.getDefaultState()
+										.getBlock()))))
 				&& ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock()))) {
 			world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), StrawberryBush1Block.block.getDefaultState(), 3);
 			if ((!(new Object() {

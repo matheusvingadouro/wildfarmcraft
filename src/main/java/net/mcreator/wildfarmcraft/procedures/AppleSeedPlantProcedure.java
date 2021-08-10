@@ -14,6 +14,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.wildfarmcraft.item.AppleSeedsItem;
+import net.mcreator.wildfarmcraft.block.FertilesoilBlock;
 import net.mcreator.wildfarmcraft.block.AppleSaplingBlock;
 import net.mcreator.wildfarmcraft.WildfarmcraftModElements;
 import net.mcreator.wildfarmcraft.WildfarmcraftMod;
@@ -59,7 +60,9 @@ public class AppleSeedPlantProcedure extends WildfarmcraftModElements.ModElement
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 				.getItem() == new ItemStack(AppleSeedsItem.block, (int) (1)).getItem())
-				&& ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.FARMLAND.getDefaultState().getBlock()))
+				&& (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == FertilesoilBlock.block.getDefaultState().getBlock())
+						|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.FARMLAND.getDefaultState()
+								.getBlock())))
 				&& ((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock()))) {
 			if ((Math.random() < 0.2)) {
 				world.setBlockState(new BlockPos((int) x, (int) (y + 1), (int) z), AppleSaplingBlock.block.getDefaultState(), 3);
