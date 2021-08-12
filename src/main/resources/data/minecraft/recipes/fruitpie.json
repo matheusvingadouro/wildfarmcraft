@@ -1,0 +1,25 @@
+{
+  "group": "wildfarmcraft",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "minecraft:fruits"
+    },
+    {
+      "item": "wildfarmcraft:flour"
+    },
+    {
+      "tag": "forge:egg"
+    },
+    {
+      "item": "wildfarmcraft:flour"
+    }
+  ],
+  "result": {
+    "item": "wildfarmcraft:fruit_pie_food",
+    "count": 2
+  }
+}
